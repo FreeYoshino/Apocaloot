@@ -289,7 +289,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 277542695}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,9 @@ GameObject:
   - component: {fileID: 330555675}
   - component: {fileID: 330555674}
   - component: {fileID: 330555677}
-  m_Layer: 0
+  - component: {fileID: 330555679}
+  - component: {fileID: 330555678}
+  m_Layer: 3
   m_Name: Shooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,6 +531,44 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &330555678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330555671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d72fd07d9e214949954de2d2d7e254a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 330555679}
+  animator: {fileID: 330555677}
+  runSpeed: 100
+--- !u!114 &330555679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330555671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ebc682e2ad01bc40978267c9355cd05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_JumpForce: 250
+  m_MovementSmoothing: 0.05
+  m_AirControl: 0
+  m_WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 55
+  m_GroundCheck: {fileID: 277542695}
+  m_CeilingCheck: {fileID: 637136956}
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,7 +670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 637136956}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
