@@ -188,7 +188,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14010108, y: 0.21093357}
+  m_Size: {x: 0.117662445, y: 0.21093357}
   m_EdgeRadius: 0
 --- !u!58 &176702742
 CircleCollider2D:
@@ -199,7 +199,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 176702740}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5a32672b9f2b48e4aac6f9fcd379772c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -222,9 +222,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07, y: -0.15}
+  m_Offset: {x: -0.06, y: -0.14}
   serializedVersion: 2
-  m_Radius: 0.06072332
+  m_Radius: 0.07168855
 --- !u!50 &176702743
 Rigidbody2D:
   serializedVersion: 4
@@ -241,7 +241,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5a32672b9f2b48e4aac6f9fcd379772c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -250,7 +250,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &176702744
 MonoBehaviour:
@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 556210624}
   - component: {fileID: 556210623}
   - component: {fileID: 556210626}
+  - component: {fileID: 556210627}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -547,6 +548,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94720c1a9954ab48b51d16ccd9bab11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &556210627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556210622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a50a33802485d784ab1f16d737bfe1db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smooothTime: 0.3
 --- !u!1 &566835155
 GameObject:
   m_ObjectHideFlags: 0
