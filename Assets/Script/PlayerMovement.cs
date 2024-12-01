@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
     public Animator animator;
-
+    public GameObject myBag;
+    public bool isOpen;
     //初始設定角色的橫移速度
     public float runSpeed = 40f;            
     float horizontalMove = 0f;
@@ -22,7 +23,12 @@ public class PlayerMovement : MonoBehaviour
         //取消訂閱OnLandEvent事件
         controller.OnLandEvent.RemoveListener(this.OnLanding);
     }
-    void Update()                   //用於輸入檢測的非物理更新邏輯
+    void Update()                   
+    {
+        Movement();
+        OpenMyBag();
+    }
+    void Movement()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;     //獲取水平的輸入並*speed,注:GetAxisRaw("Horizontal")回傳-1 or 0 or 1
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));          //給animator中的Speed值,以切換動畫
@@ -33,10 +39,20 @@ public class PlayerMovement : MonoBehaviour
             animator.SetBool("isJumping", true);
         }
     }
-
     private void OnLanding()
     {
         animator.SetBool("isJumping", false);
+    }
+
+    void OpenMyBag()
+    {
+        // 打開背包的函式
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            // 當按下背包鍵切換開啟狀態
+            isOpen = !isOpen;
+            myBag.SetActive(isOpen);
+        }
     }
 
     private void FixedUpdate()          //FixedUpadate()適用在物理計算
@@ -45,4 +61,5 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(horizontalMove*Time.fixedDeltaTime, jump);
         jump = false;
     }
+
 }
