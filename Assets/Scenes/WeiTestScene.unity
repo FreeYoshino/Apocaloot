@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 209477878}
   - component: {fileID: 209477877}
   m_Layer: 5
-  m_Name: Button
+  m_Name: UseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -798,6 +798,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 330555679}
   animator: {fileID: 330555677}
+  myBag: {fileID: 0}
+  isOpen: 0
   runSpeed: 100
 --- !u!114 &330555679
 MonoBehaviour:
@@ -1072,6 +1074,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 689661062}
   animator: {fileID: 689661060}
+  myBag: {fileID: 0}
+  isOpen: 0
   runSpeed: 100
 --- !u!114 &689661062
 MonoBehaviour:
@@ -1532,7 +1536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1185665823
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2282,6 +2286,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 2111856165}
   animator: {fileID: 2111856163}
+  myBag: {fileID: 0}
+  isOpen: 0
   runSpeed: 100
 --- !u!114 &2111856165
 MonoBehaviour:
