@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private Vector3 offest = new Vector3(0, 3, 0);              //Camera的偏移量
     private Vector3 m_Velocity = Vector3.zero;                  //儲存平滑速度時的速度值
 
-    // 定義邊界
+    // 定義邊界(請依據場景在Inspector做更動)
     [SerializeField] private float minX = -10f;                // 相機最左邊界
     [SerializeField] private float maxX = 10f;                 // 相機最右邊界
     [SerializeField] private float minY = -5f;                 // 相機最下邊界
