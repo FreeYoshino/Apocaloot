@@ -35,7 +35,7 @@ public class ItemOnWorld : MonoBehaviour
         {
             thisItem.itemHeld += 1;
         }
-        IneventoryManager.RefreshItem();
+        InventoryManager.RefreshItem();
     }
     private void Update()
     {

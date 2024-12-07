@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-public class IneventoryManager : MonoBehaviour
+public class InventoryManager : MonoBehaviour
 {
     // ³æ¨Ò¼Ò¦¡
-    static IneventoryManager instance;
+    static InventoryManager instance;
 
     public Inventory myBag;
     public GameObject slotGrid;
@@ -24,8 +24,13 @@ public class IneventoryManager : MonoBehaviour
     private void OnEnable()
     {
         RefreshItem();
+        instance.itemInformation.text = "";
     }
-
+    
+    public static void UpdateItemInfo(string itmeDescription)
+    {
+        instance.itemInformation.text = itmeDescription;    
+    }
     public static void CreateNewItem(Item item)
     {
         Slot newItem = Instantiate(instance.slotPrefab, instance.slotGrid.transform.position, Quaternion.identity);
