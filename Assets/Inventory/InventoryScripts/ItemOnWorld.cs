@@ -29,11 +29,13 @@ public class ItemOnWorld : MonoBehaviour
         if (!playerInventory.itemList.Contains(thisItem))
         {
             playerInventory.itemList.Add(thisItem);
+            // IneventoryManager.CreateNewItem(thisItem);
         }
         else
         {
             thisItem.itemHeld += 1;
         }
+        InventoryManager.RefreshItem();
     }
     private void Update()
     {

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 769665415125609999}
   - component: {fileID: 3226206243059366838}
   - component: {fileID: 6399742100080835019}
+  - component: {fileID: -8297181180468274871}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -120,7 +121,34 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3226206243059366838}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -8297181180468274871}
+        m_TargetAssemblyTypeName: Slot, Assembly-CSharp
+        m_MethodName: ItemOnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-8297181180468274871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6923100908603931342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b0d899520980149a35dc8bc4d2e060, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slotItem: {fileID: 0}
+  slotImage: {fileID: 3226206243059366838}
+  slotNum: {fileID: 378956763266495172}
 --- !u!1 &7197476455632485298
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,8 +243,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
