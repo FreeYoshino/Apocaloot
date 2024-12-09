@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40f;            
     float horizontalMove = 0f;
     bool jump = false;
+    
     private void OnEnable()                             //物件啟用時自動調用
     {
         //訂閱OnLandEvent事件,並且設定this.OnLanding為調用的函式
@@ -27,6 +28,10 @@ public class PlayerMovement : MonoBehaviour
     {
         Movement();
         OpenMyBag();
+        if (Input.GetKeyDown(KeyCode.C)) 
+        {
+            GameManager.LoadSceneFirst();
+        } 
     }
     void Movement()
     {

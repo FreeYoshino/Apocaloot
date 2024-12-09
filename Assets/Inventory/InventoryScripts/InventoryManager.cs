@@ -20,10 +20,12 @@ public class InventoryManager : MonoBehaviour
             Destroy(instance);
         }
         instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void OnEnable()
     {
+        InitializeInventory();
         RefreshItem();
         instance.itemInformation.text = "";
     }
@@ -35,7 +37,7 @@ public class InventoryManager : MonoBehaviour
         {
             allItems[i].itemHeld = 1;
         }
-    }
+    }   
     public static void UpdateItemInfo(string itmeDescription)
     {
         instance.itemInformation.text = itmeDescription;    
