@@ -12,6 +12,7 @@ public class InventoryManager : MonoBehaviour
     public Item[] allItems;             // 所有道具的表
     public Item itemSelected;           // 被選中的道具
     public GameObject slotGrid;         // UI的Grid
+    public GameObject MessagePanel;     // MessagePanel
     public Slot slotPrefab;             // Slot
     public TMP_Text itemInformation;    // Text
 
@@ -38,6 +39,7 @@ public class InventoryManager : MonoBehaviour
         bag.SetActive(true);
         slotGrid = GameObject.Find("Canvas/Bag/Grid");
         itemInformation = GameObject.Find("Canvas/Bag/ItemDescription").GetComponent<TMP_Text>();
+        MessagePanel = GameObject.Find("Canvas/MessagePanel");
         bag.SetActive(false);
         RefreshItem();
     }
@@ -51,6 +53,27 @@ public class InventoryManager : MonoBehaviour
             allItems[i].itemHeld = 1;
         }
     }   
+    public void OnUseButtonClicked()
+    {
+        // 點擊使用按鈕的事件
+        MessagePanel.SetActive(true);       // 顯示MessagePanel
+        TMP_Text  message = MessagePanel.transform.Find("Message").GetComponent<TMP_Text>();
+        if (itemSelected == null)
+        {
+            message.text = "Please Select Item.";
+        }
+        else
+        {
+            if (itemSelected.use == true)
+            {
+                message.text = "Use " + itemSelected.itemName + " item.";
+            }
+            else
+            {
+                message.text = "This item can't used.";
+            }
+        }
+    }
     public static void UpdateItemInfo(Item item)
     {
         // 更新道具選取情形
