@@ -8,6 +8,7 @@ public class InventoryManager : MonoBehaviour
     static InventoryManager instance;
 
     public Inventory myBag;
+    public Item[] allItems;
     public GameObject slotGrid;
     public Slot slotPrefab;
     public TMP_Text itemInformation;
@@ -26,7 +27,15 @@ public class InventoryManager : MonoBehaviour
         RefreshItem();
         instance.itemInformation.text = "";
     }
-    
+
+    public void InitializeInventory()
+    {
+        myBag.itemList.Clear();
+        for (int i = 0; i < allItems.Length; i++)
+        {
+            allItems[i].itemHeld = 1;
+        }
+    }
     public static void UpdateItemInfo(string itmeDescription)
     {
         instance.itemInformation.text = itmeDescription;    

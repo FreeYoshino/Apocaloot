@@ -1613,6 +1613,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myBag: {fileID: 11400000, guid: 9063a2690bc56b54f88f9cca7a25f895, type: 2}
+  allItems: []
   slotGrid: {fileID: 1825194257}
   slotPrefab: {fileID: -8297181180468274871, guid: dabe2a93401430f40be4da40344f3e6c, type: 3}
   itemInformation: {fileID: 957673168}
