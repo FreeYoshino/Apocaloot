@@ -34,10 +34,15 @@ public class PlayerMovement : MonoBehaviour
         {
             GameManager.LoadSceneFirst();
         } 
-
+        // 測試輸出角色資料
         if (Input.GetKeyDown(KeyCode.B))
         {
             CharacterManager.PrintCharacterData();
+        }
+        // 測試角色Data變動
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+
         }
     }
     void Movement()
