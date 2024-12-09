@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CatController : MonoBehaviour
+public class BossController : MonoBehaviour
 {
     public GameObject SwordPrefab;
     float WalkForce = 40f;
@@ -13,6 +13,7 @@ public class CatController : MonoBehaviour
     float run = 5f;
     float dis = 5f;
     float CD = 2f;
+    float AnimatorSpeed = 3f;
     Vector2 NowPosition;
     Vector2 start = new Vector2();
     //public Transform PlayerTransform;
@@ -47,6 +48,23 @@ public class CatController : MonoBehaviour
         {
             animator.enabled = true;
         }
+        CD += Time.deltaTime;
+        if (CD > 5)
+        {
+            transform.localScale = new Vector2(5f * key, 5f);
+            CD = 0;
+            animator.SetTrigger("BossThrowAttack");
+            animator.speed = AnimatorSpeed;
+            GameObject spin = Instantiate(SwordPrefab);
+            spin.transform.position = gameObject.transform.position;
+            animator.speed = 1f;
+
+        }
+
+
+
+
+
         //transform.localScale = new Vector2(7f * key, 7f);
         //rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
 
