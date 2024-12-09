@@ -32,7 +32,6 @@ public class CharacterController2D : MonoBehaviour
     private void Awake()                //Awake()適用在元件的初始化,在任何方法執行前調用
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
-        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame

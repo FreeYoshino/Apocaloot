@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityEngine.SceneManagement;
 using TMPro;
 public class InventoryManager : MonoBehaviour
 {
@@ -22,12 +23,21 @@ public class InventoryManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
-
     private void OnEnable()
     {
         InitializeInventory();
         RefreshItem();
         instance.itemInformation.text = "";
+    }
+
+    public void OnSceneLoaded()
+    {
+        GameObject bag = GameObject.Find("Bag");
+        bag.SetActive(true);
+        slotGrid = GameObject.Find("Canvas/Bag/Grid");
+        itemInformation = GameObject.Find("Canvas/Bag/ItemDescription").GetComponent<TMP_Text>();
+        bag.SetActive(false);
+        RefreshItem();
     }
 
     public void InitializeInventory()
