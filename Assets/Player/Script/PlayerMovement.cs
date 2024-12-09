@@ -28,10 +28,22 @@ public class PlayerMovement : MonoBehaviour
     {
         Movement();
         OpenMyBag();
+
+        // 測試切換場景
         if (Input.GetKeyDown(KeyCode.C)) 
         {
             GameManager.LoadSceneFirst();
         } 
+        // 測試輸出角色資料
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            CharacterManager.PrintCharacterData();
+        }
+        // 測試角色Data變動
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+
+        }
     }
     void Movement()
     {

@@ -8,11 +8,13 @@ public class InventoryManager : MonoBehaviour
     // 單例模式
     static InventoryManager instance;
 
-    public Inventory myBag;
-    public Item[] allItems;
-    public GameObject slotGrid;
-    public Slot slotPrefab;
-    public TMP_Text itemInformation;
+    public Inventory myBag;             // 對應到的背包
+    public Item[] allItems;             // 所有道具的表
+    public Item itemSelected;           // 被選中的道具
+    public GameObject slotGrid;         // UI的Grid
+    public GameObject MessagePanel;     // MessagePanel
+    public Slot slotPrefab;             // Slot
+    public TMP_Text itemInformation;    // Text
 
     private void Awake()
     {
@@ -32,25 +34,51 @@ public class InventoryManager : MonoBehaviour
 
     public void OnSceneLoaded()
     {
+        // 切換場景時操作
         GameObject bag = GameObject.Find("Bag");
         bag.SetActive(true);
         slotGrid = GameObject.Find("Canvas/Bag/Grid");
         itemInformation = GameObject.Find("Canvas/Bag/ItemDescription").GetComponent<TMP_Text>();
+        MessagePanel = GameObject.Find("Canvas/MessagePanel");
         bag.SetActive(false);
         RefreshItem();
     }
 
     public void InitializeInventory()
     {
+        // 初始化背包、道具數量
         myBag.itemList.Clear();
         for (int i = 0; i < allItems.Length; i++)
         {
             allItems[i].itemHeld = 1;
         }
     }   
-    public static void UpdateItemInfo(string itmeDescription)
+    public void OnUseButtonClicked()
     {
-        instance.itemInformation.text = itmeDescription;    
+        // 點擊使用按鈕的事件
+        MessagePanel.SetActive(true);       // 顯示MessagePanel
+        TMP_Text  message = MessagePanel.transform.Find("Message").GetComponent<TMP_Text>();
+        if (itemSelected == null)
+        {
+            message.text = "Please Select Item.";
+        }
+        else
+        {
+            if (itemSelected.use == true)
+            {
+                message.text = "Use " + itemSelected.itemName + " item.";
+            }
+            else
+            {
+                message.text = "This item can't used.";
+            }
+        }
+    }
+    public static void UpdateItemInfo(Item item)
+    {
+        // 更新道具選取情形
+        instance.itemInformation.text = item.itemInfo;    
+        instance.itemSelected = item;
     }
     public static void CreateNewItem(Item item)
     {
