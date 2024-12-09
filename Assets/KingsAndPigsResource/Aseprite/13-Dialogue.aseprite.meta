@@ -132,7 +132,15 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: e559864e3c1d5ad47b2a45f23169e5ec
+=======
+<<<<<<< HEAD
+    spriteID: 193794ecafed869438497cca9171b896
+=======
+    spriteID: eb382c9b4cd5f8045b8b12530161ab9c
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +160,15 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: c63dada6ccb2eb149b13e7b710fc575b
+=======
+<<<<<<< HEAD
+    spriteID: e0a5392f6172c9f4db494f78e2165fe0
+=======
+    spriteID: 10f376ea701c219408bb5ef32cd7efa2
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +188,15 @@ ScriptedImporter:
       y: 212
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 07a8c746e504df640928dbf32e62984b
+=======
+<<<<<<< HEAD
+    spriteID: faa8254f105ece2479ccc8bad2b9f682
+=======
+    spriteID: 3101ee9d59f604649b07070501e90064
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -192,7 +216,15 @@ ScriptedImporter:
       y: 316
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 3121c874de3e3f347a3e8e92f13d2d44
+=======
+<<<<<<< HEAD
+    spriteID: 44b3b63ad1ab2e9469b8423ae232d2e8
+=======
+    spriteID: 1d91dd7a9ca5d2e4bba400c0981380e0
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -212,7 +244,15 @@ ScriptedImporter:
       y: 420
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 5eb72a0e45748944f9fb185a1bf1317b
+=======
+<<<<<<< HEAD
+    spriteID: 4670513a4be21b14dbe85f86df0a9131
+=======
+    spriteID: ec9166f4432b9444383c303ab894e6a8
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -232,7 +272,15 @@ ScriptedImporter:
       y: 524
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 16688dc6386058c4eb866f95687d4d42
+=======
+<<<<<<< HEAD
+    spriteID: c3d7518c6af5e014baf1e031e08ee60a
+=======
+    spriteID: 7bb52345f95199e479d7291dc3e91e96
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -252,7 +300,15 @@ ScriptedImporter:
       y: 628
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 3032eda866e42d245a00d840ead215b1
+=======
+<<<<<<< HEAD
+    spriteID: bf4b644367e69e748a05bce2cec8b027
+=======
+    spriteID: ca61e40068b6b6347901dba52a5bc6c0
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -272,7 +328,15 @@ ScriptedImporter:
       y: 732
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 66e6307568a7528488200fb253a264a2
+=======
+<<<<<<< HEAD
+    spriteID: 16c57d7b29d3b2b4b82ec5bdc2b34c10
+=======
+    spriteID: a97b978f683ea11429162dc1822c2416
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -292,7 +356,15 @@ ScriptedImporter:
       y: 836
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 839ccea8a6124184c8498fc365a839b3
+=======
+<<<<<<< HEAD
+    spriteID: 43eea39e5ec9f624ea2343bfe7ce4918
+=======
+    spriteID: 088b749815c1908419b296d6270dd323
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -312,7 +384,15 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: e11004062dd3ec742a218ea05ccc5919
+=======
+<<<<<<< HEAD
+    spriteID: 7a18f33266f53dd4e8c7a2f66df0eb32
+=======
+    spriteID: 4ca86c644a41a5c49af3803be5993e2d
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -332,7 +412,15 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: c62e386fef07a65499853a89ec20ae57
+=======
+<<<<<<< HEAD
+    spriteID: 80fee23828ccce14a9c444b06f401659
+=======
+    spriteID: f814868153b9d5a46a88a1e3a39fc8f8
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -352,7 +440,15 @@ ScriptedImporter:
       y: 212
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: a6fba8f1260038b4c8cdc2385a9c603c
+=======
+<<<<<<< HEAD
+    spriteID: 7dcdd449ce8f366409ae211085cd6539
+=======
+    spriteID: c267af6d2912af64cade14c47b830b5c
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -372,7 +468,15 @@ ScriptedImporter:
       y: 316
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 800fbc72236579844901289264b02423
+=======
+<<<<<<< HEAD
+    spriteID: da87b7d7fbbe9b14587a53c6f822043d
+=======
+    spriteID: 63985886340a8f84bafd4835958fc284
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -392,7 +496,15 @@ ScriptedImporter:
       y: 420
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 01bea8980e4c7c1448080a4bedf26f63
+=======
+<<<<<<< HEAD
+    spriteID: 32e6cdd3fdea57c44acd3b7bd830b10b
+=======
+    spriteID: 547b120fb00ad6a44bfb1f9a0c5fe44c
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -412,7 +524,15 @@ ScriptedImporter:
       y: 524
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: ecfd7c5c0eafbaf4fb77205743e9f912
+=======
+<<<<<<< HEAD
+    spriteID: 344984ac33b9bca4d8575ab88ba17346
+=======
+    spriteID: 306b53a3496a6a746ac1c7c3a81aba7a
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -432,7 +552,15 @@ ScriptedImporter:
       y: 628
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 6b1f008e1279e8841ba8352c6686af4c
+=======
+<<<<<<< HEAD
+    spriteID: 844fa76a4e301d443a278d5ee4eafb07
+=======
+    spriteID: dd68755405a0c2a43a4faef047394b79
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -452,7 +580,15 @@ ScriptedImporter:
       y: 732
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 10d66daeb53466346b91dd812b11d704
+=======
+<<<<<<< HEAD
+    spriteID: f08753523868b3a44b42e624cbe35804
+=======
+    spriteID: cb43880045f83724d8ca61c1752fa5dd
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -472,7 +608,15 @@ ScriptedImporter:
       y: 836
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 80139860a35d67c40b88dfa38d159f8d
+=======
+<<<<<<< HEAD
+    spriteID: baa3ae28bc9084f499ea4c9438ed5069
+=======
+    spriteID: 4f34aafe239b4724cb42d4c15d49c9fd
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -492,7 +636,15 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 90f957f90fbc7cd498e3f3950854cffe
+=======
+<<<<<<< HEAD
+    spriteID: 91b6b43483c548844a7eee11e49a2355
+=======
+    spriteID: 96215317405f46f42937f4afe54cbd32
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -512,7 +664,15 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: d1dc9dea8e10988439ce8cf533147071
+=======
+<<<<<<< HEAD
+    spriteID: c4fa4833eaef36f4594c81c730f86f30
+=======
+    spriteID: 78fd76dd39c3d964eb81b2201e8079b1
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -532,7 +692,15 @@ ScriptedImporter:
       y: 212
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 2f18bc406ccedc745b1de2c6049bbc3e
+=======
+<<<<<<< HEAD
+    spriteID: 79707560b03ebcf4bb7371507f059816
+=======
+    spriteID: 7eb9188b92cd84940a8c1c4b84b9819c
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -552,7 +720,15 @@ ScriptedImporter:
       y: 316
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 2daa0682260911b41a19ebf358082ba0
+=======
+<<<<<<< HEAD
+    spriteID: 992d8eb946500b4478d1213ffa1e3b79
+=======
+    spriteID: 03b21cbe5f22d504594149692330f707
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -572,7 +748,15 @@ ScriptedImporter:
       y: 420
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 3c81266df5c607a44ace4d0698bcb23e
+=======
+<<<<<<< HEAD
+    spriteID: 5ac76b9165cd53d489cd6cee39ee60f7
+=======
+    spriteID: 6d0e10ce9536b8649818dc235a96316e
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -592,7 +776,15 @@ ScriptedImporter:
       y: 524
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 2c2ebe59e38970a43aef3859073272cb
+=======
+<<<<<<< HEAD
+    spriteID: f66d2798ff3342e4c9a7bcacdf960358
+=======
+    spriteID: ff6bb3db90d5e434cb200aaf0f6e3229
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -612,7 +804,15 @@ ScriptedImporter:
       y: 628
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: f3e42062f6b5be24a9ef95814aadf10f
+=======
+<<<<<<< HEAD
+    spriteID: 476044a5f4df7124ba3c3f56f15fc495
+=======
+    spriteID: 4451649d32463f34b8f8efa3cc10e5a9
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -632,7 +832,15 @@ ScriptedImporter:
       y: 732
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 3cb41fbd5705f0743977778037aa1c9d
+=======
+<<<<<<< HEAD
+    spriteID: a69d22f674c020c49baf12c52f564757
+=======
+    spriteID: 4f9f9469da6a8534fa6069266ae71cc8
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -652,7 +860,15 @@ ScriptedImporter:
       y: 836
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 272b89d3d0dedc745a0d55be8370763e
+=======
+<<<<<<< HEAD
+    spriteID: c837a40d337d22344a96339b8c303c39
+=======
+    spriteID: 3f50d2c6c26108b44b4ef0e99f1de04c
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -672,7 +888,15 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 9c05c54020f3975448b0828ef396c804
+=======
+<<<<<<< HEAD
+    spriteID: 1cd4b6a76796ca34ea78c59086e5e80a
+=======
+    spriteID: 0ba4315a434b0fd478456b74125bc7fc
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -692,7 +916,15 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: a8dd454df31b32040a765739f6fa0a90
+=======
+<<<<<<< HEAD
+    spriteID: 4b3ecda0c19590a439f3f97b61340695
+=======
+    spriteID: c9b5f603fe0b8db4da629f6b9243e659
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -712,7 +944,15 @@ ScriptedImporter:
       y: 212
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: a02e31a2ac98d2c458b93f4ee7de0cf4
+=======
+<<<<<<< HEAD
+    spriteID: 217b6cea323093646ba640d306788463
+=======
+    spriteID: 84d2eee4343a505469eef419d966c433
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -732,7 +972,15 @@ ScriptedImporter:
       y: 316
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: df2c8e06518de424a96bb7979121db39
+=======
+<<<<<<< HEAD
+    spriteID: f53d15d5672f6014a89495b3f1e3e64e
+=======
+    spriteID: 6857237b73a740e42b66aa3ce283af0d
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -752,7 +1000,15 @@ ScriptedImporter:
       y: 420
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: f2d10c925581f3b459db10f637523e93
+=======
+<<<<<<< HEAD
+    spriteID: 0982e909d8a21074397852acd710c035
+=======
+    spriteID: c0fa6ce851b26ab408be5c5e15b70297
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -772,7 +1028,15 @@ ScriptedImporter:
       y: 524
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 2479291f9a0b6924abb9ff5705b5b08d
+=======
+<<<<<<< HEAD
+    spriteID: 374074c7fa407484491e4a61219987b5
+=======
+    spriteID: f13af415a91e43646831565c934aa3e0
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -792,7 +1056,15 @@ ScriptedImporter:
       y: 628
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: f1a926456c1be8042bcd58df820eb858
+=======
+<<<<<<< HEAD
+    spriteID: e5d949839c2802847835d5aef0570f0d
+=======
+    spriteID: 7485ecf579f439240a59b084ebb5beb9
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -812,7 +1084,15 @@ ScriptedImporter:
       y: 732
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 4df4c8eb7412a9348971ca33b0729e4a
+=======
+<<<<<<< HEAD
+    spriteID: eb5240a89ff67f241ba03c7c4be9e81a
+=======
+    spriteID: 51246cbecb4db3944b38685d2d81e440
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -832,7 +1112,15 @@ ScriptedImporter:
       y: 836
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 4392bd5813c9a1e4aacef1786b390632
+=======
+<<<<<<< HEAD
+    spriteID: e47db16b0bd1abf44a2c1787a0b96774
+=======
+    spriteID: 2e0efb82093542b49a6212c474a61e87
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -852,7 +1140,15 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 9f550692d0ae7cb40bc3f99f84c8b610
+=======
+<<<<<<< HEAD
+    spriteID: 01644df51bdfbc84999af37a009c784a
+=======
+    spriteID: 23782ea0f52424c47a86594d8e95485f
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -872,7 +1168,15 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 588b54b835e3d0a4b82870afdfd43fb0
+=======
+<<<<<<< HEAD
+    spriteID: 9a6d1e89729598c4daf3df966189ecca
+=======
+    spriteID: 334661102fae7f24f965dc6991bcbb0b
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -892,7 +1196,15 @@ ScriptedImporter:
       y: 212
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 3be64d18e8a0b1d4cb3acaa2fa9de6d6
+=======
+<<<<<<< HEAD
+    spriteID: f84133badcc6b384e9709cd97bb8d677
+=======
+    spriteID: 5daec8618b8e0d6438bcf8c5a6917940
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -912,7 +1224,15 @@ ScriptedImporter:
       y: 316
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: e97fc5c5de58cc641a06ae8e7e4bd837
+=======
+<<<<<<< HEAD
+    spriteID: 344e0d6485520bc4682ad99130f60ae2
+=======
+    spriteID: fc1735d8849269c45a0a9cbd23a36b74
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -932,7 +1252,15 @@ ScriptedImporter:
       y: 420
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 5e8dfe42ed675994da228fa720cf0603
+=======
+<<<<<<< HEAD
+    spriteID: ca12266cb8576a744a21831bc5cab05b
+=======
+    spriteID: c1b503131667d4b4a9e57a726f0f3376
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -952,7 +1280,15 @@ ScriptedImporter:
       y: 524
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 3100307c7fbd1ff4dbe33ec4ca87fb04
+=======
+<<<<<<< HEAD
+    spriteID: f7fbadad97a525e43b2aec10d93a8feb
+=======
+    spriteID: eb404e47c4fc6dd408772634f62c0540
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -972,7 +1308,15 @@ ScriptedImporter:
       y: 628
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 5ab3997ac468e27478813d59709ca9d9
+=======
+<<<<<<< HEAD
+    spriteID: 33bc139a6ad3caa45b37cfdd2df0cc1f
+=======
+    spriteID: 272b5ba8d79af7a499fce4c9cd50afd6
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -992,7 +1336,15 @@ ScriptedImporter:
       y: 732
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 7f5f35c3de98ddd488ca9bc5bcf0bdb4
+=======
+<<<<<<< HEAD
+    spriteID: 5b8cedc72e0771b458112ff2786380ab
+=======
+    spriteID: c56e8b267306858459a32a8e658f8870
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1012,7 +1364,15 @@ ScriptedImporter:
       y: 836
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: d3ad049b634728f4ab689ce1702f03f1
+=======
+<<<<<<< HEAD
+    spriteID: b80c29da9160a71429c299867ca0440a
+=======
+    spriteID: a72b4daf100c1684dbf9981a52511c55
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1032,7 +1392,15 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 5341aa1085be4dc43b5becd0c18818b9
+=======
+<<<<<<< HEAD
+    spriteID: 95d35ef3e00825b46b99f7c77035dffe
+=======
+    spriteID: cbcbdb9602e1a144793b755a68ffe8ff
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1052,7 +1420,15 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: bbf96f8fc7b4c9e4880b25634e09d0f0
+=======
+<<<<<<< HEAD
+    spriteID: c6837bbb3218113418da7853c019f745
+=======
+    spriteID: 17ea6160a865595488c2e5b8720131fa
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1072,7 +1448,15 @@ ScriptedImporter:
       y: 212
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 71e7ad5d88c3db346a3624b5d8988c2e
+=======
+<<<<<<< HEAD
+    spriteID: 741ca5545e7cf584e93e694189188bcc
+=======
+    spriteID: 63520dc5bdfb4404187e7344c52b3d1e
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1092,7 +1476,15 @@ ScriptedImporter:
       y: 316
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 3d8d874562de6ff48b049ea8eecddedd
+=======
+<<<<<<< HEAD
+    spriteID: 81657fe2d50836948a6a2d4e8242e17a
+=======
+    spriteID: f39de7d9bcefd87439458677a256ff2d
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1112,7 +1504,15 @@ ScriptedImporter:
       y: 420
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 5855b4ce7e797eb46a93d3127726201a
+=======
+<<<<<<< HEAD
+    spriteID: 21965fac7472ad34b83bbaa53161384b
+=======
+    spriteID: f47a1e65e8e44324f9873b5da6145615
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1138,7 +1538,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: e559864e3c1d5ad47b2a45f23169e5ec
+=======
+<<<<<<< HEAD
+      spriteId: 193794ecafed869438497cca9171b896
+=======
+      spriteId: eb382c9b4cd5f8045b8b12530161ab9c
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -1147,7 +1555,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: c63dada6ccb2eb149b13e7b710fc575b
+=======
+<<<<<<< HEAD
+      spriteId: e0a5392f6172c9f4db494f78e2165fe0
+=======
+      spriteId: 10f376ea701c219408bb5ef32cd7efa2
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -1156,7 +1572,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 07a8c746e504df640928dbf32e62984b
+=======
+<<<<<<< HEAD
+      spriteId: faa8254f105ece2479ccc8bad2b9f682
+=======
+      spriteId: 3101ee9d59f604649b07070501e90064
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -1165,7 +1589,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 3121c874de3e3f347a3e8e92f13d2d44
+=======
+<<<<<<< HEAD
+      spriteId: 44b3b63ad1ab2e9469b8423ae232d2e8
+=======
+      spriteId: 1d91dd7a9ca5d2e4bba400c0981380e0
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -1174,7 +1606,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 5eb72a0e45748944f9fb185a1bf1317b
+=======
+<<<<<<< HEAD
+      spriteId: 4670513a4be21b14dbe85f86df0a9131
+=======
+      spriteId: ec9166f4432b9444383c303ab894e6a8
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
@@ -1183,7 +1623,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 16688dc6386058c4eb866f95687d4d42
+=======
+<<<<<<< HEAD
+      spriteId: c3d7518c6af5e014baf1e031e08ee60a
+=======
+      spriteId: 7bb52345f95199e479d7291dc3e91e96
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
@@ -1192,7 +1640,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 3032eda866e42d245a00d840ead215b1
+=======
+<<<<<<< HEAD
+      spriteId: bf4b644367e69e748a05bce2cec8b027
+=======
+      spriteId: ca61e40068b6b6347901dba52a5bc6c0
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
@@ -1201,7 +1657,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 66e6307568a7528488200fb253a264a2
+=======
+<<<<<<< HEAD
+      spriteId: 16c57d7b29d3b2b4b82ec5bdc2b34c10
+=======
+      spriteId: a97b978f683ea11429162dc1822c2416
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
@@ -1210,7 +1674,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 839ccea8a6124184c8498fc365a839b3
+=======
+<<<<<<< HEAD
+      spriteId: 43eea39e5ec9f624ea2343bfe7ce4918
+=======
+      spriteId: 088b749815c1908419b296d6270dd323
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
@@ -1219,7 +1691,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: e11004062dd3ec742a218ea05ccc5919
+=======
+<<<<<<< HEAD
+      spriteId: 7a18f33266f53dd4e8c7a2f66df0eb32
+=======
+      spriteId: 4ca86c644a41a5c49af3803be5993e2d
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
@@ -1228,7 +1708,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: c62e386fef07a65499853a89ec20ae57
+=======
+<<<<<<< HEAD
+      spriteId: 80fee23828ccce14a9c444b06f401659
+=======
+      spriteId: f814868153b9d5a46a88a1e3a39fc8f8
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
@@ -1237,7 +1725,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: a6fba8f1260038b4c8cdc2385a9c603c
+=======
+<<<<<<< HEAD
+      spriteId: 7dcdd449ce8f366409ae211085cd6539
+=======
+      spriteId: c267af6d2912af64cade14c47b830b5c
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_12
       frameIndex: 12
       additiveSortOrder: 0
@@ -1246,7 +1742,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 800fbc72236579844901289264b02423
+=======
+<<<<<<< HEAD
+      spriteId: da87b7d7fbbe9b14587a53c6f822043d
+=======
+      spriteId: 63985886340a8f84bafd4835958fc284
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_13
       frameIndex: 13
       additiveSortOrder: 0
@@ -1255,7 +1759,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 01bea8980e4c7c1448080a4bedf26f63
+=======
+<<<<<<< HEAD
+      spriteId: 32e6cdd3fdea57c44acd3b7bd830b10b
+=======
+      spriteId: 547b120fb00ad6a44bfb1f9a0c5fe44c
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_14
       frameIndex: 14
       additiveSortOrder: 0
@@ -1264,7 +1776,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: ecfd7c5c0eafbaf4fb77205743e9f912
+=======
+<<<<<<< HEAD
+      spriteId: 344984ac33b9bca4d8575ab88ba17346
+=======
+      spriteId: 306b53a3496a6a746ac1c7c3a81aba7a
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_15
       frameIndex: 15
       additiveSortOrder: 0
@@ -1273,7 +1793,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 6b1f008e1279e8841ba8352c6686af4c
+=======
+<<<<<<< HEAD
+      spriteId: 844fa76a4e301d443a278d5ee4eafb07
+=======
+      spriteId: dd68755405a0c2a43a4faef047394b79
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_16
       frameIndex: 16
       additiveSortOrder: 0
@@ -1282,7 +1810,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 10d66daeb53466346b91dd812b11d704
+=======
+<<<<<<< HEAD
+      spriteId: f08753523868b3a44b42e624cbe35804
+=======
+      spriteId: cb43880045f83724d8ca61c1752fa5dd
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_17
       frameIndex: 17
       additiveSortOrder: 0
@@ -1291,7 +1827,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 80139860a35d67c40b88dfa38d159f8d
+=======
+<<<<<<< HEAD
+      spriteId: baa3ae28bc9084f499ea4c9438ed5069
+=======
+      spriteId: 4f34aafe239b4724cb42d4c15d49c9fd
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_18
       frameIndex: 18
       additiveSortOrder: 0
@@ -1300,7 +1844,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 90f957f90fbc7cd498e3f3950854cffe
+=======
+<<<<<<< HEAD
+      spriteId: 91b6b43483c548844a7eee11e49a2355
+=======
+      spriteId: 96215317405f46f42937f4afe54cbd32
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_19
       frameIndex: 19
       additiveSortOrder: 0
@@ -1309,7 +1861,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: d1dc9dea8e10988439ce8cf533147071
+=======
+<<<<<<< HEAD
+      spriteId: c4fa4833eaef36f4594c81c730f86f30
+=======
+      spriteId: 78fd76dd39c3d964eb81b2201e8079b1
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_20
       frameIndex: 20
       additiveSortOrder: 0
@@ -1318,7 +1878,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 2f18bc406ccedc745b1de2c6049bbc3e
+=======
+<<<<<<< HEAD
+      spriteId: 79707560b03ebcf4bb7371507f059816
+=======
+      spriteId: 7eb9188b92cd84940a8c1c4b84b9819c
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_21
       frameIndex: 21
       additiveSortOrder: 0
@@ -1327,7 +1895,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 2daa0682260911b41a19ebf358082ba0
+=======
+<<<<<<< HEAD
+      spriteId: 992d8eb946500b4478d1213ffa1e3b79
+=======
+      spriteId: 03b21cbe5f22d504594149692330f707
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_22
       frameIndex: 22
       additiveSortOrder: 0
@@ -1336,7 +1912,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 3c81266df5c607a44ace4d0698bcb23e
+=======
+<<<<<<< HEAD
+      spriteId: 5ac76b9165cd53d489cd6cee39ee60f7
+=======
+      spriteId: 6d0e10ce9536b8649818dc235a96316e
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_23
       frameIndex: 23
       additiveSortOrder: 0
@@ -1345,7 +1929,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 2c2ebe59e38970a43aef3859073272cb
+=======
+<<<<<<< HEAD
+      spriteId: f66d2798ff3342e4c9a7bcacdf960358
+=======
+      spriteId: ff6bb3db90d5e434cb200aaf0f6e3229
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_24
       frameIndex: 24
       additiveSortOrder: 0
@@ -1354,7 +1946,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: f3e42062f6b5be24a9ef95814aadf10f
+=======
+<<<<<<< HEAD
+      spriteId: 476044a5f4df7124ba3c3f56f15fc495
+=======
+      spriteId: 4451649d32463f34b8f8efa3cc10e5a9
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_25
       frameIndex: 25
       additiveSortOrder: 0
@@ -1363,7 +1963,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 3cb41fbd5705f0743977778037aa1c9d
+=======
+<<<<<<< HEAD
+      spriteId: a69d22f674c020c49baf12c52f564757
+=======
+      spriteId: 4f9f9469da6a8534fa6069266ae71cc8
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_26
       frameIndex: 26
       additiveSortOrder: 0
@@ -1372,7 +1980,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 272b89d3d0dedc745a0d55be8370763e
+=======
+<<<<<<< HEAD
+      spriteId: c837a40d337d22344a96339b8c303c39
+=======
+      spriteId: 3f50d2c6c26108b44b4ef0e99f1de04c
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_27
       frameIndex: 27
       additiveSortOrder: 0
@@ -1381,7 +1997,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 9c05c54020f3975448b0828ef396c804
+=======
+<<<<<<< HEAD
+      spriteId: 1cd4b6a76796ca34ea78c59086e5e80a
+=======
+      spriteId: 0ba4315a434b0fd478456b74125bc7fc
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_28
       frameIndex: 28
       additiveSortOrder: 0
@@ -1390,7 +2014,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: a8dd454df31b32040a765739f6fa0a90
+=======
+<<<<<<< HEAD
+      spriteId: 4b3ecda0c19590a439f3f97b61340695
+=======
+      spriteId: c9b5f603fe0b8db4da629f6b9243e659
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_29
       frameIndex: 29
       additiveSortOrder: 0
@@ -1399,7 +2031,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: a02e31a2ac98d2c458b93f4ee7de0cf4
+=======
+<<<<<<< HEAD
+      spriteId: 217b6cea323093646ba640d306788463
+=======
+      spriteId: 84d2eee4343a505469eef419d966c433
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_30
       frameIndex: 30
       additiveSortOrder: 0
@@ -1408,7 +2048,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: df2c8e06518de424a96bb7979121db39
+=======
+<<<<<<< HEAD
+      spriteId: f53d15d5672f6014a89495b3f1e3e64e
+=======
+      spriteId: 6857237b73a740e42b66aa3ce283af0d
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_31
       frameIndex: 31
       additiveSortOrder: 0
@@ -1417,7 +2065,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: f2d10c925581f3b459db10f637523e93
+=======
+<<<<<<< HEAD
+      spriteId: 0982e909d8a21074397852acd710c035
+=======
+      spriteId: c0fa6ce851b26ab408be5c5e15b70297
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_32
       frameIndex: 32
       additiveSortOrder: 0
@@ -1426,7 +2082,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 2479291f9a0b6924abb9ff5705b5b08d
+=======
+<<<<<<< HEAD
+      spriteId: 374074c7fa407484491e4a61219987b5
+=======
+      spriteId: f13af415a91e43646831565c934aa3e0
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_33
       frameIndex: 33
       additiveSortOrder: 0
@@ -1435,7 +2099,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: f1a926456c1be8042bcd58df820eb858
+=======
+<<<<<<< HEAD
+      spriteId: e5d949839c2802847835d5aef0570f0d
+=======
+      spriteId: 7485ecf579f439240a59b084ebb5beb9
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_34
       frameIndex: 34
       additiveSortOrder: 0
@@ -1444,7 +2116,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 4df4c8eb7412a9348971ca33b0729e4a
+=======
+<<<<<<< HEAD
+      spriteId: eb5240a89ff67f241ba03c7c4be9e81a
+=======
+      spriteId: 51246cbecb4db3944b38685d2d81e440
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_35
       frameIndex: 35
       additiveSortOrder: 0
@@ -1453,7 +2133,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 4392bd5813c9a1e4aacef1786b390632
+=======
+<<<<<<< HEAD
+      spriteId: e47db16b0bd1abf44a2c1787a0b96774
+=======
+      spriteId: 2e0efb82093542b49a6212c474a61e87
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_36
       frameIndex: 36
       additiveSortOrder: 0
@@ -1462,7 +2150,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 9f550692d0ae7cb40bc3f99f84c8b610
+=======
+<<<<<<< HEAD
+      spriteId: 01644df51bdfbc84999af37a009c784a
+=======
+      spriteId: 23782ea0f52424c47a86594d8e95485f
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_37
       frameIndex: 37
       additiveSortOrder: 0
@@ -1471,7 +2167,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 588b54b835e3d0a4b82870afdfd43fb0
+=======
+<<<<<<< HEAD
+      spriteId: 9a6d1e89729598c4daf3df966189ecca
+=======
+      spriteId: 334661102fae7f24f965dc6991bcbb0b
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_38
       frameIndex: 38
       additiveSortOrder: 0
@@ -1480,7 +2184,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 3be64d18e8a0b1d4cb3acaa2fa9de6d6
+=======
+<<<<<<< HEAD
+      spriteId: f84133badcc6b384e9709cd97bb8d677
+=======
+      spriteId: 5daec8618b8e0d6438bcf8c5a6917940
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_39
       frameIndex: 39
       additiveSortOrder: 0
@@ -1489,7 +2201,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: e97fc5c5de58cc641a06ae8e7e4bd837
+=======
+<<<<<<< HEAD
+      spriteId: 344e0d6485520bc4682ad99130f60ae2
+=======
+      spriteId: fc1735d8849269c45a0a9cbd23a36b74
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_40
       frameIndex: 40
       additiveSortOrder: 0
@@ -1498,7 +2218,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 5e8dfe42ed675994da228fa720cf0603
+=======
+<<<<<<< HEAD
+      spriteId: ca12266cb8576a744a21831bc5cab05b
+=======
+      spriteId: c1b503131667d4b4a9e57a726f0f3376
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_41
       frameIndex: 41
       additiveSortOrder: 0
@@ -1507,7 +2235,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 3100307c7fbd1ff4dbe33ec4ca87fb04
+=======
+<<<<<<< HEAD
+      spriteId: f7fbadad97a525e43b2aec10d93a8feb
+=======
+      spriteId: eb404e47c4fc6dd408772634f62c0540
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_42
       frameIndex: 42
       additiveSortOrder: 0
@@ -1516,7 +2252,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 5ab3997ac468e27478813d59709ca9d9
+=======
+<<<<<<< HEAD
+      spriteId: 33bc139a6ad3caa45b37cfdd2df0cc1f
+=======
+      spriteId: 272b5ba8d79af7a499fce4c9cd50afd6
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_43
       frameIndex: 43
       additiveSortOrder: 0
@@ -1525,7 +2269,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 7f5f35c3de98ddd488ca9bc5bcf0bdb4
+=======
+<<<<<<< HEAD
+      spriteId: 5b8cedc72e0771b458112ff2786380ab
+=======
+      spriteId: c56e8b267306858459a32a8e658f8870
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_44
       frameIndex: 44
       additiveSortOrder: 0
@@ -1534,7 +2286,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: d3ad049b634728f4ab689ce1702f03f1
+=======
+<<<<<<< HEAD
+      spriteId: b80c29da9160a71429c299867ca0440a
+=======
+      spriteId: a72b4daf100c1684dbf9981a52511c55
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_45
       frameIndex: 45
       additiveSortOrder: 0
@@ -1543,7 +2303,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 5341aa1085be4dc43b5becd0c18818b9
+=======
+<<<<<<< HEAD
+      spriteId: 95d35ef3e00825b46b99f7c77035dffe
+=======
+      spriteId: cbcbdb9602e1a144793b755a68ffe8ff
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_46
       frameIndex: 46
       additiveSortOrder: 0
@@ -1552,7 +2320,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: bbf96f8fc7b4c9e4880b25634e09d0f0
+=======
+<<<<<<< HEAD
+      spriteId: c6837bbb3218113418da7853c019f745
+=======
+      spriteId: 17ea6160a865595488c2e5b8720131fa
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_47
       frameIndex: 47
       additiveSortOrder: 0
@@ -1561,7 +2337,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 71e7ad5d88c3db346a3624b5d8988c2e
+=======
+<<<<<<< HEAD
+      spriteId: 741ca5545e7cf584e93e694189188bcc
+=======
+      spriteId: 63520dc5bdfb4404187e7344c52b3d1e
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_48
       frameIndex: 48
       additiveSortOrder: 0
@@ -1570,7 +2354,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 3d8d874562de6ff48b049ea8eecddedd
+=======
+<<<<<<< HEAD
+      spriteId: 81657fe2d50836948a6a2d4e8242e17a
+=======
+      spriteId: f39de7d9bcefd87439458677a256ff2d
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_49
       frameIndex: 49
       additiveSortOrder: 0
@@ -1579,7 +2371,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 5855b4ce7e797eb46a93d3127726201a
+=======
+<<<<<<< HEAD
+      spriteId: 21965fac7472ad34b83bbaa53161384b
+=======
+      spriteId: f47a1e65e8e44324f9873b5da6145615
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     linkedCells: []
     parentIndex: -1
   platformSettings:

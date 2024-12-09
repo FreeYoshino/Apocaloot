@@ -132,7 +132,15 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 249b0dc145301984a957c11a868a45c2
+=======
+<<<<<<< HEAD
+    spriteID: 4fac8e489fca65e43afa3af9c34dd1c7
+=======
+    spriteID: c98cdfbf458ed724eb55543686ee5f66
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -152,7 +160,15 @@ ScriptedImporter:
       y: 108
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: c2e830f401014594bb4a172232d2f912
+=======
+<<<<<<< HEAD
+    spriteID: 4309be3683d7c9f4fa4204cfe561dadf
+=======
+    spriteID: b357305df2106264bb8b817baaf03f88
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -172,7 +188,15 @@ ScriptedImporter:
       y: 4
       width: 96
       height: 96
+<<<<<<< HEAD
     spriteID: 437d514bab5328345b5af04d31224d3a
+=======
+<<<<<<< HEAD
+    spriteID: 5930ef53ac29362479b5008ad980ea45
+=======
+    spriteID: 527caa21daa27b1478882bf06af17bae
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -198,7 +222,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 249b0dc145301984a957c11a868a45c2
+=======
+<<<<<<< HEAD
+      spriteId: 4fac8e489fca65e43afa3af9c34dd1c7
+=======
+      spriteId: c98cdfbf458ed724eb55543686ee5f66
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -207,7 +239,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: c2e830f401014594bb4a172232d2f912
+=======
+<<<<<<< HEAD
+      spriteId: 4309be3683d7c9f4fa4204cfe561dadf
+=======
+      spriteId: b357305df2106264bb8b817baaf03f88
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -216,7 +256,15 @@ ScriptedImporter:
         y: 0
         width: 96
         height: 96
+<<<<<<< HEAD
       spriteId: 437d514bab5328345b5af04d31224d3a
+=======
+<<<<<<< HEAD
+      spriteId: 5930ef53ac29362479b5008ad980ea45
+=======
+      spriteId: 527caa21daa27b1478882bf06af17bae
+>>>>>>> 05bc717e (應該正常了吧)
+>>>>>>> 287af937 (rebase conflict)
     linkedCells: []
     parentIndex: -1
   platformSettings:
