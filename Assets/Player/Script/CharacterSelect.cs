@@ -9,4 +9,5 @@ public class CharacterSelect : MonoBehaviour
     {
         CharacterManager.InitializeCharacterData(characterData);
     }
+
 }

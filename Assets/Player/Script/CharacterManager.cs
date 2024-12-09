@@ -21,6 +21,13 @@ public class CharacterManager : MonoBehaviour
     public static void InitializeCharacterData(CharacterData data)
     {
         // 對角色資料做設定
+        Debug.Log("Work");
         instance.myCharacterData = data;
+    }
+    public static void PrintCharacterData()
+    {
+        Debug.Log("CharacterName: " + instance.myCharacterData.characterName);
+        Debug.Log("CharacterHp: " + instance.myCharacterData.characterHp);
+        Debug.Log("CharacterPower: " + instance.myCharacterData.characterPower);
     }
 }

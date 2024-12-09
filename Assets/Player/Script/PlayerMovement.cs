@@ -28,10 +28,17 @@ public class PlayerMovement : MonoBehaviour
     {
         Movement();
         OpenMyBag();
+
+        // ´ú¸Õ¤Á´«³õ´º
         if (Input.GetKeyDown(KeyCode.C)) 
         {
             GameManager.LoadSceneFirst();
         } 
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            CharacterManager.PrintCharacterData();
+        }
     }
     void Movement()
     {
