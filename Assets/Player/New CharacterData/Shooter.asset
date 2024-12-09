@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c12a65a7a6460ae4ca79ab3832595164, type: 3}
   m_Name: Shooter
   m_EditorClassIdentifier: 
-  characterName: 
-  characterHp: 0
-  characterPower: 0
+  characterName: Shooter
+  characterHp: 80
+  characterPower: 10
