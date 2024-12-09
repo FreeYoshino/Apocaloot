@@ -13,6 +13,6 @@ public class Item : ScriptableObject
 
     public bool use;            // 使否可以使用
     public float itemHp;        // 血量效果
-    public float itemPower      // 攻擊力效果
+    public float itemPower;      // 攻擊力效果
 
 }

@@ -8,11 +8,12 @@ public class InventoryManager : MonoBehaviour
     // 單例模式
     static InventoryManager instance;
 
-    public Inventory myBag;
-    public Item[] allItems;
-    public GameObject slotGrid;
-    public Slot slotPrefab;
-    public TMP_Text itemInformation;
+    public Inventory myBag;             // 對應到的背包
+    public Item[] allItems;             // 所有道具的表
+    public Item itemSelected;           // 被選中的道具
+    public GameObject slotGrid;         // UI的Grid
+    public Slot slotPrefab;             // Slot
+    public TMP_Text itemInformation;    // Text
 
     private void Awake()
     {
@@ -32,6 +33,7 @@ public class InventoryManager : MonoBehaviour
 
     public void OnSceneLoaded()
     {
+        // 切換場景時操作
         GameObject bag = GameObject.Find("Bag");
         bag.SetActive(true);
         slotGrid = GameObject.Find("Canvas/Bag/Grid");
@@ -42,15 +44,18 @@ public class InventoryManager : MonoBehaviour
 
     public void InitializeInventory()
     {
+        // 初始化背包、道具數量
         myBag.itemList.Clear();
         for (int i = 0; i < allItems.Length; i++)
         {
             allItems[i].itemHeld = 1;
         }
     }   
-    public static void UpdateItemInfo(string itmeDescription)
+    public static void UpdateItemInfo(Item item)
     {
-        instance.itemInformation.text = itmeDescription;    
+        // 更新道具選取情形
+        instance.itemInformation.text = item.itemInfo;    
+        instance.itemSelected = item;
     }
     public static void CreateNewItem(Item item)
     {
