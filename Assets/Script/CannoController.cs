@@ -16,12 +16,13 @@ public class CanoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         CD += Time.deltaTime;
         if (CD > 2)
         {
             transform.localScale = new Vector2(5f, 5f);
-            animator.SetTrigger("BossThrowAttack");
-            animator.speed = 0.5f;
+            animator.SetTrigger("CannoShoot");
+            animator.speed = 2f;
             CD = 0;
             GameObject spin = Instantiate(CannoBall); ;
             spin.transform.position = gameObject.transform.position;

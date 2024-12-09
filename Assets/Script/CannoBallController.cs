@@ -18,7 +18,6 @@ public class CannoBallController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        animator.enabled = true;
         canno = GameObject.Find("Canno");
         right_border = GameObject.Find("right_border");
         left_border = GameObject.Find("left_border");
@@ -38,13 +37,13 @@ public class CannoBallController : MonoBehaviour
     {
         if (gameObject.transform.position.x > right_border.transform.position.x)
         {
-            animator.enabled = false;
-            Destroy(gameObject);
+            animator.SetTrigger("CannoBall");
+            //Destroy(gameObject);
         }
         if (gameObject.transform.position.x < left_border.transform.position.x)
         {
-            animator.enabled = false;
-            Destroy(gameObject);
+            animator.SetTrigger("CannoBall");
+            //Destroy(gameObject);
         }
 
     }

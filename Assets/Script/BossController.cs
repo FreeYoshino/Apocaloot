@@ -13,6 +13,7 @@ public class BossController : MonoBehaviour
     float run = 5f;
     float dis = 5f;
     float CD = 2f;
+    float AnimatorSpeed = 3f;
     Vector2 NowPosition;
     Vector2 start = new Vector2();
     //public Transform PlayerTransform;
@@ -48,14 +49,16 @@ public class BossController : MonoBehaviour
             animator.enabled = true;
         }
         CD += Time.deltaTime;
-        if (CD > 2)
+        if (CD > 5)
         {
             transform.localScale = new Vector2(5f * key, 5f);
-            animator.SetTrigger("BossThrowAttack");
-            animator.speed = 0.5f;
             CD = 0;
+            animator.SetTrigger("BossThrowAttack");
+            animator.speed = AnimatorSpeed;
             GameObject spin = Instantiate(SwordPrefab);
             spin.transform.position = gameObject.transform.position;
+            animator.speed = 1f;
+
         }
 
 
