@@ -58,7 +58,7 @@ public class InventoryManager : MonoBehaviour
         // 點擊使用按鈕的事件
         MessagePanel.SetActive(true);       // 顯示MessagePanel
         TMP_Text  message = MessagePanel.transform.Find("Message").GetComponent<TMP_Text>();
-        if (itemSelected == null)
+        if (itemSelected == null || !myBag.itemList.Contains(itemSelected))
         {
             message.text = "Please Select Item.";
         }
