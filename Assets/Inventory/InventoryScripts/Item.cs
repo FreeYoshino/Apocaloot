@@ -11,8 +11,9 @@ public class Item : ScriptableObject
     [TextArea]
     public string itemInfo;
 
-    public bool use;            // 使否可以使用
-    public float itemHp;        // 血量效果
-    public float itemPower;      // 攻擊力效果
+    public bool use;                // 使否可以使用
+    public float itemHealing;       // 回血效果
+    public float itemHp;            // 增加血量上限效果
+    public float itemPower;         // 攻擊力效果
 
 }

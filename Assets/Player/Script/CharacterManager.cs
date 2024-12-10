@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Properties;
 using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
@@ -38,5 +39,19 @@ public class CharacterManager : MonoBehaviour
             return null;
         }
         return instance.myCharacterData;
+    }
+    public static void UseItem(Item item, Inventory inventory)
+    {
+        if (item.itemHeld == 1)
+        {
+            inventory.itemList.Remove(item);
+        }
+        else
+        {
+            item.itemHeld -= 1;
+        }
+        instance.myCharacterData.characterMaxHp += item.itemHp;
+        instance.myCharacterData.characterHp += item.itemHealing;
+        instance.myCharacterData.characterPower += item.itemPower;
     }
 }

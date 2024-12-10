@@ -66,7 +66,9 @@ public class InventoryManager : MonoBehaviour
         {
             if (itemSelected.use == true)
             {
+                CharacterManager.UseItem(itemSelected, myBag);
                 message.text = "Use " + itemSelected.itemName + " item.";
+                RefreshItem();
             }
             else
             {
