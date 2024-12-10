@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,8 +13,11 @@ public class BossController : MonoBehaviour
     float key = 1f;
     float run = 5f;
     float dis = 5f;
-    float CD = 2f;
-    float AnimatorSpeed = 3f;
+    float CD = 0f;
+    float ThrowSpeed = 3f;
+    float ThrowCD = 5f;
+    float IdleCD;
+    float MoveCD;
     Vector2 NowPosition;
     Vector2 start = new Vector2();
     //public Transform PlayerTransform;
@@ -24,9 +28,13 @@ public class BossController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        IdleCD = ThrowCD - 1.5f;
+        MoveCD = ThrowCD + 1.5f;
         Application.targetFrameRate = 60;
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        animator.enabled = true;
+        animator.speed = 1f;
         NowPosition = transform.position;
         start = transform.position;
 
@@ -44,22 +52,44 @@ public class BossController : MonoBehaviour
         {
             key = 1f;
         }
-        if (rigidbody2D.velocity == new Vector2(0, 0))
-        {
-            animator.enabled = true;
-        }
-        CD += Time.deltaTime;
-        if (CD > 5)
+        if (rigidbody2D.velocity != new Vector2(0, 0))
         {
             transform.localScale = new Vector2(9f * key, 9f);
-            CD = 0;
+            rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
+            animator.SetTrigger("BossMove");
+        }
+        else
+        {
+            if(CD > MoveCD)
+            {
+                transform.localScale = new Vector2(9f * key, 9f);
+                rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
+                ThrowCD = 5f;
+                CD = 0;
+            }
+        }
+        
+
+
+
+        CD += Time.deltaTime;
+        if (CD > IdleCD)
+        {
+            animator.SetTrigger("BossMove2Idle");
+            rigidbody2D.velocity = new Vector2(0, 0);
+        }
+        if (CD > ThrowCD)
+        {
+            transform.localScale = new Vector2(9f * key, 9f);
             animator.SetTrigger("BossThrowAttack");
-            animator.speed = AnimatorSpeed;
+            animator.speed = ThrowSpeed;
             GameObject spin = Instantiate(SwordPrefab);
             spin.transform.position = gameObject.transform.position;
             animator.speed = 1f;
+            ThrowCD = float.PositiveInfinity;
 
         }
+
 
 
 

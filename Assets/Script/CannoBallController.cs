@@ -26,7 +26,6 @@ public class CannoBallController : MonoBehaviour
         
         gameObject.transform.localScale = new Vector2(direction, 5f);
         rb = GetComponent<Rigidbody2D>();
-        Debug.Log(direction);
         if (direction > 0)
         {
             rb.velocity = new Vector2(-MaxSpeed, 0);
