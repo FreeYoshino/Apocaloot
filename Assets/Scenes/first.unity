@@ -17034,9 +17034,15 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 71cd923aea0e3504886923c785353393, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 7903801579b0ab1478355ff7f812bcb8, type: 2}
+<<<<<<< HEAD
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 5a87bd95080641442a277c4e46740771, type: 2}
   - m_RefCount: 7
+=======
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 10
+>>>>>>> 443abb2a (Boss移動跟丟刀)
     m_Data: {fileID: 11400000, guid: 6872b9f783ee72d42a7719c20d9108b7, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: cd82879f8c68bf54a85e18f630afbddf, type: 2}
@@ -17408,7 +17414,11 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 722491591, guid: 0d933a9c0eb264744ab9eeb64f999f53, type: 3}
   m_TileMatrixArray:
+<<<<<<< HEAD
   - m_RefCount: 1496
+=======
+  - m_RefCount: 1513
+>>>>>>> 443abb2a (Boss移動跟丟刀)
     m_Data:
       e00: 1
       e01: 0
@@ -17439,7 +17449,11 @@ Tilemap:
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
+<<<<<<< HEAD
   - m_RefCount: 1496
+=======
+  - m_RefCount: 1513
+>>>>>>> 443abb2a (Boss移動跟丟刀)
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
