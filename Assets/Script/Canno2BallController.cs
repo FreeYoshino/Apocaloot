@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CannoBallController : MonoBehaviour
+public class CannoBall2Controller : MonoBehaviour
 {
     // Start is called before the first frame update
     GameObject canno, Player;
@@ -18,7 +18,7 @@ public class CannoBallController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        canno = GameObject.Find("Canno");
+        canno = GameObject.Find("Canno2");
         right_border = GameObject.Find("right_border");
         left_border = GameObject.Find("left_border");
         //Player = GameObject.Find("Player");
@@ -26,6 +26,7 @@ public class CannoBallController : MonoBehaviour
         
         gameObject.transform.localScale = new Vector2(direction, 5f);
         rb = GetComponent<Rigidbody2D>();
+        Debug.Log(direction);
         if (direction > 0)
         {
             rb.velocity = new Vector2(-MaxSpeed, 0);
