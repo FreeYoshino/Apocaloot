@@ -53,6 +53,7 @@ public class BossController : MonoBehaviour
             key = 1f;
         }
         if (rigidbody2D.velocity != new Vector2(0, 0))
+<<<<<<< HEAD
         {
             transform.localScale = new Vector2(9f * key, 9f);
             rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
@@ -86,6 +87,36 @@ public class BossController : MonoBehaviour
             transform.localScale = new Vector2(9f * key, 9f);
             CD = 0;
 >>>>>>> bdd405b5 (完成加農砲2)
+=======
+        {
+            transform.localScale = new Vector2(9f * key, 9f);
+            rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
+            animator.SetTrigger("BossMove");
+        }
+        else
+        {
+            if(CD > MoveCD)
+            {
+                transform.localScale = new Vector2(9f * key, 9f);
+                rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
+                ThrowCD = 5f;
+                CD = 0;
+            }
+        }
+        
+
+
+
+        CD += Time.deltaTime;
+        if (CD > IdleCD)
+        {
+            animator.SetTrigger("BossMove2Idle");
+            rigidbody2D.velocity = new Vector2(0, 0);
+        }
+        if (CD > ThrowCD)
+        {
+            transform.localScale = new Vector2(9f * key, 9f);
+>>>>>>> 443abb2a (Boss移動跟丟刀)
             animator.SetTrigger("BossThrowAttack");
             animator.speed = ThrowSpeed;
             GameObject spin = Instantiate(SwordPrefab);
