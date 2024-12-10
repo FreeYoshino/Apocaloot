@@ -17408,11 +17408,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 722491591, guid: 0d933a9c0eb264744ab9eeb64f999f53, type: 3}
   m_TileMatrixArray:
-<<<<<<< HEAD
-  - m_RefCount: 1513
-=======
   - m_RefCount: 1496
->>>>>>> 8bb85cc4 (製作傳送門)
     m_Data:
       e00: 1
       e01: 0
@@ -17443,11 +17439,7 @@ Tilemap:
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
-<<<<<<< HEAD
-  - m_RefCount: 1513
-=======
   - m_RefCount: 1496
->>>>>>> 8bb85cc4 (製作傳送門)
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
