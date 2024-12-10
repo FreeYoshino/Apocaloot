@@ -121,16 +121,12 @@ public class BossController : MonoBehaviour
         if (CD > ThrowCD)
         {
             transform.localScale = new Vector2(9f * key, 9f);
-=======
             transform.localScale = new Vector2(9f * key, 9f);
             CD = 0;
->>>>>>> bdd405b5 (完成加農砲2)
-=======
-        {
             transform.localScale = new Vector2(9f * key, 9f);
             rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
             animator.SetTrigger("BossMove");
-        }
+       
         else
         {
             //移動設定
@@ -152,7 +148,6 @@ public class BossController : MonoBehaviour
         if (CD > ThrowCD)
         {
             transform.localScale = new Vector2(9f * key, 9f);
->>>>>>> 443abb2a (Boss移動跟丟刀)
             animator.SetTrigger("BossThrowAttack");
             animator.speed = ThrowSpeed;
             GameObject spin = Instantiate(SwordPrefab);
@@ -249,7 +244,7 @@ public class BossController : MonoBehaviour
         //        key = -1f;
         //    }
         //    if (Input.GetKey(KeyCode.RightArrow))
-        //    {
+        //    { 
         //        key = 1f;
         //    }
         //    if (rigidbody2D.velocity.y == 0 && Input.GetKeyDown(KeyCode.Space))
