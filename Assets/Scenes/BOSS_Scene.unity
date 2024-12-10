@@ -846,8 +846,13 @@ Transform:
   m_GameObject: {fileID: 816782529}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -0.2, y: -0.5, z: 10}
   m_LocalScale: {x: 5, y: 5, z: 1}
+=======
+  m_LocalPosition: {x: 2.9, y: -0.12, z: 10}
+  m_LocalScale: {x: 5.1340466, y: 2.9384758, z: 1}
+>>>>>>> bdd405b5 (完成加農砲2)
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 245562330}
@@ -3950,5 +3955,8 @@ SceneRoots:
   - {fileID: 774607308}
   - {fileID: 66737316}
   - {fileID: 1678276253}
+<<<<<<< HEAD
   - {fileID: 198761840}
   - {fileID: 1401298293}
+=======
+>>>>>>> bdd405b5 (完成加農砲2)

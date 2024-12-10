@@ -60,6 +60,7 @@ public class BossController : MonoBehaviour
         }
         else
         {
+<<<<<<< HEAD
             if(CD > MoveCD)
             {
                 transform.localScale = new Vector2(9f * key, 9f);
@@ -81,6 +82,10 @@ public class BossController : MonoBehaviour
         if (CD > ThrowCD)
         {
             transform.localScale = new Vector2(9f * key, 9f);
+=======
+            transform.localScale = new Vector2(9f * key, 9f);
+            CD = 0;
+>>>>>>> bdd405b5 (完成加農砲2)
             animator.SetTrigger("BossThrowAttack");
             animator.speed = ThrowSpeed;
             GameObject spin = Instantiate(SwordPrefab);
