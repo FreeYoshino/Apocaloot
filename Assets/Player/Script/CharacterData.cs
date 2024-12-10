@@ -7,6 +7,10 @@ using UnityEngine;
 public class CharacterData : ScriptableObject
 {
     public string characterName;
+    public float characterMaxHp;
     public float characterHp;
     public float characterPower;
+
+    public enum CharacterType { Archer, Shooter, Hammer }
+    public CharacterType characterType;
 }
