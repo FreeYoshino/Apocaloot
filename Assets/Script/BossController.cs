@@ -91,7 +91,7 @@ public class BossController : MonoBehaviour
             key = 1f;
         }
         if (rigidbody2D.velocity != new Vector2(0, 0))
-<<<<<<< HEAD
+
         {
             transform.localScale = new Vector2(9f * key, 9f);
             rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
@@ -99,7 +99,7 @@ public class BossController : MonoBehaviour
         }
         else
         {
-<<<<<<< HEAD
+
             if(CD > MoveCD)
             {
                 transform.localScale = new Vector2(9f * key, 9f);
@@ -126,7 +126,7 @@ public class BossController : MonoBehaviour
             transform.localScale = new Vector2(9f * key, 9f);
             rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
             animator.SetTrigger("BossMove");
-       
+        }
         else
         {
             //移動設定
