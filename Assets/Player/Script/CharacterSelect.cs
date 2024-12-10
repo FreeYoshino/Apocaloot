@@ -9,8 +9,4 @@ public class CharacterSelect : MonoBehaviour
     {
         CharacterManager.InitializeCharacterData(characterData);
     }
-    public void OnItemUsed(Item item)
-    {
-
-    }
 }

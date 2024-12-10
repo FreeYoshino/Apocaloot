@@ -30,4 +30,13 @@ public class CharacterManager : MonoBehaviour
         Debug.Log("CharacterHp: " + instance.myCharacterData.characterHp);
         Debug.Log("CharacterPower: " + instance.myCharacterData.characterPower);
     }
+    public static CharacterData GetCharacterData()
+    {
+        // Àò¨ú¨¤¦âData
+        if (instance.myCharacterData == null)
+        {
+            return null;
+        }
+        return instance.myCharacterData;
+    }
 }
