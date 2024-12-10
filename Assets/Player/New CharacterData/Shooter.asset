@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Shooter
   m_EditorClassIdentifier: 
   characterName: Shooter
+  characterMaxHp: 80
   characterHp: 80
   characterPower: 10
+  characterType: 1

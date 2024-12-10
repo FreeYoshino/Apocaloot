@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Hammer
   m_EditorClassIdentifier: 
   characterName: Hammer
+  characterMaxHp: 150
   characterHp: 150
   characterPower: 10
+  characterType: 2

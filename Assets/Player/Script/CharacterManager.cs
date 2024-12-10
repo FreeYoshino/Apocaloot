@@ -7,7 +7,6 @@ public class CharacterManager : MonoBehaviour
 {
     // 單例模式
     static CharacterManager instance;
-
     CharacterData myCharacterData;
     private void Awake()
     {
@@ -40,8 +39,21 @@ public class CharacterManager : MonoBehaviour
         }
         return instance.myCharacterData;
     }
+    public static void ModifyMaxHp(float value)
+    {
+        instance.myCharacterData.characterMaxHp += value;
+    }
+    public static void ModifyHp(float value)
+    {
+        instance.myCharacterData.characterHp += value;
+    }
+    public static void ModifyPower(float value)
+    {
+        instance.myCharacterData.characterPower += value;
+    }
     public static void UseItem(Item item, Inventory inventory)
     {
+        // 使用道具
         if (item.itemHeld == 1)
         {
             inventory.itemList.Remove(item);
@@ -50,8 +62,8 @@ public class CharacterManager : MonoBehaviour
         {
             item.itemHeld -= 1;
         }
-        instance.myCharacterData.characterMaxHp += item.itemHp;
-        instance.myCharacterData.characterHp += item.itemHealing;
-        instance.myCharacterData.characterPower += item.itemPower;
+        ModifyMaxHp(item.itemHp);
+        ModifyHp(item.itemHealing);
+        ModifyPower(item.itemPower);
     }
 }

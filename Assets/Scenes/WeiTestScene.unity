@@ -3110,6 +3110,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adeb5170153b16f48918f3fb79633eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allCharacter:
+  - {fileID: 11400000, guid: 91a85d68b85eb4446b42407775783328, type: 2}
+  - {fileID: 11400000, guid: e5627fd6907871e48bab3c3ec787a04e, type: 2}
+  - {fileID: 11400000, guid: b01d0d361dfa0f8448bd8c7057b21772, type: 2}
   OnLoadScene:
     m_PersistentCalls:
       m_Calls:

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Archer
   m_EditorClassIdentifier: 
   characterName: Archer
-  characterMaxHp: 700
+  characterMaxHp: 100
   characterHp: 100
-  characterPower: 310
+  characterPower: 15
+  characterType: 0
