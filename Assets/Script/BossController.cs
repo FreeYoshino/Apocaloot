@@ -51,7 +51,7 @@ public class BossController : MonoBehaviour
         CD += Time.deltaTime;
         if (CD > 5)
         {
-            transform.localScale = new Vector2(5f * key, 5f);
+            transform.localScale = new Vector2(9f * key, 9f);
             CD = 0;
             animator.SetTrigger("BossThrowAttack");
             animator.speed = AnimatorSpeed;

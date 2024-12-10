@@ -23,9 +23,9 @@ public class SpinningSwordController : MonoBehaviour
         gameObject.transform.localScale = new Vector2(direction, 5f);
         rb = GetComponent<Rigidbody2D>();
         if (direction > 0)
-            rb.velocity = new Vector2(MaxSpeed, boss.transform.position.y);
+            rb.velocity = new Vector2(MaxSpeed,0);
         else
-            rb.velocity = new Vector2(-MaxSpeed, boss.transform.position.y);
+            rb.velocity = new Vector2(-MaxSpeed,0);
     }
 
     // Update is called once per frame
