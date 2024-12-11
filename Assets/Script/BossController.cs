@@ -1,43 +1,33 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEngine.UI.Image;
 
 public class BossController : MonoBehaviour
 {
     public GameObject SwordPrefab;
-    //public GameObject PlayerBullet;
- 
-    float JumpForce = 18f;    //BOSS跳的力道
-    float JumpX = 0.1f;
-    float key = 1f;          //BOSS是否轉向
-    float run = 5f;         //move的速度
-    float dis = 15f;        //Boss移動距離範圍
-    float CD = 0f;          //總CD
-    float ThrowSpeed = 3f; //丟刀動畫速度
-    float ThrowCD = 5f;    //丟刀CD
-    float IdleCD;          //閒置CD
-    float MoveCD;         //移動CD
-    float Jumptime = 20f; //跳的CD
-    float rayLength = 2.4f; //偵測高度
-    float raydis = 2f;   //偵測是否跳的距離
-    float direction;  // Boss 方向
-    float JumpCD = 0f; // 跳的CD是否還在
-    float time=0f;
+    float WalkForce = 40f;
+    float JumpForce = 100f;
+    float MaxSpeed = 1f;
+    float key = 1f;
+    float run = 5f;
+    float dis = 5f;
+    float CD = 0f;
+    float ThrowSpeed = 3f;
+    float ThrowCD = 5f;
+    float IdleCD;
+    float MoveCD;
     Vector2 NowPosition;
     Vector2 start = new Vector2();
     //public Transform PlayerTransform;
-    //取的地形的橋的圖層
-    public LayerMask bridgeLayer; 
+
     Animator animator;
 
     Rigidbody2D rigidbody2D;
     // Start is called before the first frame update
     void Start()
     {
-        bridgeLayer = LayerMask.GetMask("JumpablePlatform");
         IdleCD = ThrowCD - 1.5f;
         MoveCD = ThrowCD + 1.5f;
         Application.targetFrameRate = 60;
@@ -47,41 +37,13 @@ public class BossController : MonoBehaviour
         animator.speed = 1f;
         NowPosition = transform.position;
         start = transform.position;
-        transform.localScale = new Vector2(9f * key, 9f);
-        rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        direction = transform.localScale.x > 0 ? 1 : -1;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position+new Vector3(raydis*direction,0,0), Vector2.up, rayLength, bridgeLayer);
 
-        if (JumpCD == 1) 
-        {
-            time += Time.deltaTime;
-            if (time >= Jumptime)
-            {
-                time = 0;
-                JumpCD = 0f;
-            }
-        }
-        //是否要跳
-        if (JumpCD == 0f)
-        {
-            if (hit.collider != null)
-            {
-                CD = 0;
-                JumpCD = 1f;
-                //Debug.Log("Detected bridge: " + hit.collider.gameObject.name);
-                rigidbody2D.velocity = new Vector2(JumpX,JumpForce); // 設置垂直速度
-                animator.SetTrigger("Bossjump");
-                
-
-            }
-        }
-        //設定角色是否轉向
         if (transform.position.x > NowPosition.x + dis)
         {
             key = -1f;
@@ -91,7 +53,6 @@ public class BossController : MonoBehaviour
             key = 1f;
         }
         if (rigidbody2D.velocity != new Vector2(0, 0))
-<<<<<<< HEAD
         {
             transform.localScale = new Vector2(9f * key, 9f);
             rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
@@ -99,7 +60,6 @@ public class BossController : MonoBehaviour
         }
         else
         {
-<<<<<<< HEAD
             if(CD > MoveCD)
             {
                 transform.localScale = new Vector2(9f * key, 9f);
@@ -121,38 +81,6 @@ public class BossController : MonoBehaviour
         if (CD > ThrowCD)
         {
             transform.localScale = new Vector2(9f * key, 9f);
-=======
-            transform.localScale = new Vector2(9f * key, 9f);
-            CD = 0;
->>>>>>> bdd405b5 (完成加農砲2)
-=======
-        {
-            transform.localScale = new Vector2(9f * key, 9f);
-            rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-            animator.SetTrigger("BossMove");
-        }
-        else
-        {
-            //移動設定
-            if (CD > MoveCD)
-            {
-                transform.localScale = new Vector2(9f * key, 9f);
-                rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-                ThrowCD = 5f;
-                CD = 0;
-            }
-        }
-        //丟刀設定
-        CD += Time.deltaTime;
-        if (CD > IdleCD)
-        {
-            animator.SetTrigger("BossMove2Idle");
-            rigidbody2D.velocity = new Vector2(0, 0);
-        }
-        if (CD > ThrowCD)
-        {
-            transform.localScale = new Vector2(9f * key, 9f);
->>>>>>> 443abb2a (Boss移動跟丟刀)
             animator.SetTrigger("BossThrowAttack");
             animator.speed = ThrowSpeed;
             GameObject spin = Instantiate(SwordPrefab);
@@ -273,12 +201,4 @@ public class BossController : MonoBehaviour
         //        animator.speed = speedx / 2.0f;
         //    }
     }
-    void OnDrawGizmos()
-    {
-        
-    //    Debug.Log("rwge");
-       Gizmos.color = Color.green;
-        Gizmos.DrawLine(transform.position, transform.position + Vector3.up * rayLength);
-    }
-
 }
