@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9062593995657316993}
   - component: {fileID: 6616144192361011682}
   m_Layer: 8
-  m_Name: tileCollider
+  m_Name: tileboarder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,5 +75,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 0.8, y: 0.8}
   m_EdgeRadius: 0
