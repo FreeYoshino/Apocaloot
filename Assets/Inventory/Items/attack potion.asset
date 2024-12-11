@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79c3871b10c0e54f9c4556cefa2cedc, type: 3}
+  m_Name: attack potion
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemImage: {fileID: 21300000, guid: 96ada252ba3c58147afc63c229827502, type: 3}
+  itemHeld: 0
+  itemInfo: +10 power
+  use: 1
+  itemHealing: 0
+  itemHp: 0
+  itemPower: 10

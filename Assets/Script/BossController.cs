@@ -22,13 +22,14 @@ public class BossController : MonoBehaviour
     float MoveCD;         //移動CD
     float Jumptime = 2f; //跳的CD
     float rayLength = 2.4f; //偵測高度
-    float raydis = 3f;   //偵測是否跳的距離
+    float raydis = 5f;   //偵測是否跳的距離
     float direction;  // Boss 方向
     float JumpCD = 0f; // 跳的CD是否還在
     float time=0f;
     float JumpSpeed = 0.5f; //跳躍的動畫時間
     bool isGrounded; // 是否在地面上
     float checkRadius = 0.3f; // 檢測是否在地上的半徑
+    float gravity = 0f;  //重力
     Vector3 ground = new Vector3(0, -1f,0);
     Vector2 NowPosition;
     Vector2 start = new Vector2();
@@ -60,6 +61,8 @@ public class BossController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(rigidbody2D.velocity);
+        
         direction = transform.localScale.x > 0 ? 1 : -1;
         RaycastHit2D hit = Physics2D.Raycast(transform.position+new Vector3(raydis*direction,0,0), Vector2.up, rayLength, bridgeLayer);
 
@@ -96,62 +99,39 @@ public class BossController : MonoBehaviour
         {
             key = 1f;
         }
-        if (rigidbody2D.velocity != new Vector2(0, 0))
+        if (rigidbody2D.velocity != new Vector2(0, gravity))
 
         {
             transform.localScale = new Vector2(9f * key, 9f);
             rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
             animator.SetTrigger("BossMove");
         }
-        else
-        {
+       
+        
 
-            if(CD > MoveCD)
-            {
-                transform.localScale = new Vector2(9f * key, 9f);
-                rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-                ThrowCD = 5f;
-                CD = 0;
-            }
+        if(CD > MoveCD)
+        {
+            transform.localScale = new Vector2(9f * key, 9f);
+            rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
+            ThrowCD = 5f;
+            CD = 0;
         }
 
 
-        isGrounded = Physics2D.OverlapCircle(transform.position+ground, checkRadius, bridgeLayer);
-        if (isGrounded)
+
+// isGrounded = Physics2D.OverlapCircle(transform.position+ground, checkRadius, bridgeLayer);
+      //  if (isGrounded)
         {
             Debug.Log("isgrounded");
-            CD += Time.deltaTime;
-            if (CD > IdleCD)
-            {
-                animator.SetTrigger("BossMove2Idle");
-                rigidbody2D.velocity = new Vector2(0, 0);
-            }
-            if (CD > ThrowCD)
-            {
-                transform.localScale = new Vector2(9f * key, 9f);
-                transform.localScale = new Vector2(9f * key, 9f);
-                CD = 0;
-                transform.localScale = new Vector2(9f * key, 9f);
-                rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-                animator.SetTrigger("BossMove");
-            }
-            else
-            {
-                //移動設定
-                if (CD > MoveCD)
-                {
-                    transform.localScale = new Vector2(9f * key, 9f);
-                    rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-                    ThrowCD = 5f;
-                    CD = 0;
-                }
-            }
+            
+            
+            
             //丟刀設定
             CD += Time.deltaTime;
             if (CD > IdleCD)
             {
                 animator.SetTrigger("BossMove2Idle");
-                rigidbody2D.velocity = new Vector2(0, 0);
+                rigidbody2D.velocity = new Vector2(0, gravity);
             }
             if (CD > ThrowCD)
             {
