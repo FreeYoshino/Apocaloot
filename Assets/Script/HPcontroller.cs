@@ -26,8 +26,8 @@ public class HPcontroller : MonoBehaviour
             time -= 5;
         }
         time += Time.deltaTime;
-        
-        
+
+
     }
     void DecreaseHP()
     {
