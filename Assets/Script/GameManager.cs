@@ -52,6 +52,19 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    public void SetCharacterActive()
+    {
+        CharacterData character = CharacterManager.GetCharacterData();
+        for (int i = 0; i < allCharacter.Length; i++)
+        {
+            if (allCharacter[i].characterType == character.characterType)
+            {
+                continue;
+            }
+            GameObject.Find(allCharacter[i].characterName).SetActive(false);
+        }
+    }
     private void OnDestroy()
     {
         // 取消訂閱場景加載回調
@@ -60,15 +73,16 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "first")
+        if (scene.name == "FirstScene")
         {
+            // instance.SetCharacterActive(CharacterManager.GetCharacterData());
             OnLoadScene.Invoke();
         }
     }
 
     public static void LoadFirstScene()
     {
-        SceneManager.LoadScene("first");
+        SceneManager.LoadScene("FirstScene");
     }
 
 }
