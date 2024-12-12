@@ -28,11 +28,11 @@ public class InventoryManager : MonoBehaviour
     private void OnEnable()
     {
         InitializeInventory();
-        RefreshItem();
-        instance.itemInformation.text = "";
+        // RefreshItem();
+        // instance.itemInformation.text = "";
     }
 
-    public void OnSceneLoaded()
+    public void OnGameSceneLoaded()
     {
         // ¤Á´«³õ´º®É¾Þ§@
         GameObject bag = GameObject.Find("Bag");

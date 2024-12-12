@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         // 測試切換場景
         if (Input.GetKeyDown(KeyCode.C)) 
         {
-            GameManager.LoadSceneFirst();
+            GameManager.LoadFirstScene();
         } 
         // 測試輸出角色資料
         if (Input.GetKeyDown(KeyCode.B))
