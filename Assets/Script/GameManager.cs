@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public static void LoadSceneFirst()
+    public static void LoadFirstScene()
     {
         SceneManager.LoadScene("first");
     }
