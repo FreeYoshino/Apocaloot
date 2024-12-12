@@ -20,8 +20,13 @@ public class CharacterManager : MonoBehaviour
 
     public static void InitializeCharacterData(CharacterData data)
     {
+        if (data == null)
+        {
+            Debug.Log("CharacterData is null");
+            return;
+        }
         // 對角色資料做設定
-        Debug.Log("Work");
+        Debug.Log("Selected Character: " + data.characterName);
         instance.myCharacterData = data;
     }
     public static void PrintCharacterData()
@@ -35,9 +40,18 @@ public class CharacterManager : MonoBehaviour
         // 獲取角色Data
         if (instance.myCharacterData == null)
         {
+            Debug.Log("Return Null");
             return null;
         }
         return instance.myCharacterData;
+    }
+    public static GameObject GetCharacterObject()
+    {
+        if (instance.myCharacterData == null)
+        {
+            return null;
+        }
+        return GameObject.Find(instance.myCharacterData.characterName); 
     }
     public static void ModifyMaxHp(float value)
     {
