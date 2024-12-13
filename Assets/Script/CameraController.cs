@@ -22,7 +22,7 @@ public class CameraController : MonoBehaviour
         player = CharacterManager.GetCharacterObject();
         if (player != null)
         {
-            Debug.Log("CameraController work");
+            // Debug.Log("CameraController work");
         }
         target = player.transform; 
 

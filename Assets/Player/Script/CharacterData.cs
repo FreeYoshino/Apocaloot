@@ -10,6 +10,7 @@ public class CharacterData : ScriptableObject
     public float characterMaxHp;
     public float characterHp;
     public float characterPower;
+    public float characterTimeToAttack;
 
     public enum CharacterType { Archer, Shooter, Hammer }
     public CharacterType characterType;
