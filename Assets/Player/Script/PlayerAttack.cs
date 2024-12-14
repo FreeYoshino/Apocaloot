@@ -7,6 +7,7 @@ public class PlayerAttack : MonoBehaviour
     CharacterData characterData;            // 角色Data
     private float timer = 0f;               // 攻擊時間的timer
     private bool isAttacking = false;       // 是否在攻擊
+    public BulletGenerator bulletGenerator; // 子彈生成器
     private void Start()
     {
         characterData = CharacterManager.GetCharacterData();
@@ -35,10 +36,10 @@ public class PlayerAttack : MonoBehaviour
         switch (characterData.characterType)
         {
             case CharacterData.CharacterType.Archer:
-                Debug.Log("遠程攻擊");
+                FireProjectile();
                 break;
             case CharacterData.CharacterType.Shooter:
-                Debug.Log("遠程攻擊");
+                FireProjectile();
                 break;
             case CharacterData.CharacterType.Hammer:
                 HammerAttack();
@@ -53,5 +54,11 @@ public class PlayerAttack : MonoBehaviour
         GameObject attackArea = CharacterManager.GetCharacterObject().transform.Find("AttackArea").gameObject;
         isAttacking = true;
         attackArea.SetActive(isAttacking);
+    }
+    private void FireProjectile()
+    {
+        // 發射子彈類攻擊
+        Debug.Log("開火");
+        bulletGenerator.Fire();
     }
 }
