@@ -6,8 +6,9 @@ using UnityEngine;
 public class CharacterManager : MonoBehaviour
 {
     // 單例模式
-    static CharacterManager instance;
-    CharacterData myCharacterData;
+    public static CharacterManager instance;
+    public CharacterData myCharacterData;
+    public HealthBar myHealthBar;
     private void Awake()
     {
         if (instance != null)
@@ -28,6 +29,12 @@ public class CharacterManager : MonoBehaviour
         // 對角色資料做設定
         Debug.Log("Selected Character: " + data.characterName);
         instance.myCharacterData = data;
+    }
+    public void OnGameSceneLoad()
+    {
+        // 遊戲場景載入後 要更新血調顯示的內容
+        myHealthBar = GameObject.Find("PlayerHealthBar").GetComponent<HealthBar>();
+        myHealthBar.SetMaxHealth(myCharacterData.characterMaxHp, myCharacterData.characterHp);
     }
     public static void PrintCharacterData()
     {
@@ -53,19 +60,26 @@ public class CharacterManager : MonoBehaviour
         }
         return GameObject.Find(instance.myCharacterData.characterName); 
     }
-    public static void ModifyMaxHp(float value)
+    public void IncreaseMaxHp(float value)
     {
         instance.myCharacterData.characterMaxHp += value;
+        instance.myHealthBar.SetMaxHealth(myCharacterData.characterMaxHp, myCharacterData.characterHp);
     }
-    public static void ModifyHp(float value)
+    public void IncreaseHp(float value)
     {
         instance.myCharacterData.characterHp += value;
+        instance.myHealthBar.SetHealth(myCharacterData.characterHp);
     }
-    public static void ModifyPower(float value)
+    public void DecreaseHp(float value)
+    {
+        instance.myCharacterData.characterHp -= value;
+        instance.myHealthBar.SetHealth(myCharacterData.characterHp);
+    }
+    public void IncreasePower(float value)
     {
         instance.myCharacterData.characterPower += value;
     }
-    public static void UseItem(Item item, Inventory inventory)
+    public void UseItem(Item item, Inventory inventory)
     {
         // 使用道具
         if (item.itemHeld == 1)
@@ -76,8 +90,8 @@ public class CharacterManager : MonoBehaviour
         {
             item.itemHeld -= 1;
         }
-        ModifyMaxHp(item.itemHp);
-        ModifyHp(item.itemHealing);
-        ModifyPower(item.itemPower);
+        IncreaseMaxHp(item.itemHp);
+        IncreaseHp(item.itemHealing);
+        IncreasePower(item.itemPower);
     }
 }
