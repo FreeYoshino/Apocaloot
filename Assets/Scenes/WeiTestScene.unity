@@ -1138,7 +1138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4177990900025799131, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1696,7 +1696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ca6ab583c46af4ab556b5880207b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCharacterData: {fileID: 11400000, guid: b01d0d361dfa0f8448bd8c7057b21772, type: 2}
+  myCharacterData: {fileID: 11400000, guid: 91a85d68b85eb4446b42407775783328, type: 2}
   myHealthBar: {fileID: 428444465}
 --- !u!4 &770188836
 Transform:
@@ -3605,7 +3605,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5287095294473624398, guid: 7033bf85e5a47854094668c96ced218f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

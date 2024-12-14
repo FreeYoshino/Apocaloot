@@ -8,14 +8,16 @@ public class PlayerAttack : MonoBehaviour
     private float timer = 0f;               // 攻擊時間的timer
     private bool isAttacking = false;       // 是否在攻擊
     public BulletGenerator bulletGenerator; // 子彈生成器
+    private Animator animator;              // 動畫
     private void Start()
     {
         characterData = CharacterManager.GetCharacterData();
+        animator = GetComponent<Animator>();
     }
     private void Update()
     {
         // 滑鼠左鍵攻擊
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !isAttacking)
         {
             Attack();
         }
@@ -33,6 +35,7 @@ public class PlayerAttack : MonoBehaviour
     }
     private void Attack()
     {
+        animator.SetTrigger("Attack");
         switch (characterData.characterType)
         {
             case CharacterData.CharacterType.Archer:
