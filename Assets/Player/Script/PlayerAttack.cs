@@ -28,7 +28,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 timer = 0f;
                 isAttacking = false;
-                if (characterData.characterType == CharacterData.CharacterType.Hammer) CharacterManager.GetCharacterObject().transform.Find("AttackArea").gameObject.SetActive(isAttacking);  
+                if (characterData.characterType == CharacterData.CharacterType.Hammer) gameObject.transform.Find("AttackArea").gameObject.SetActive(isAttacking);  
             }
         }
 
@@ -54,7 +54,7 @@ public class PlayerAttack : MonoBehaviour
     {
         // ºl¤l§ðÀ»
         Debug.Log("ºl¤l§ðÀ»");
-        GameObject attackArea = CharacterManager.GetCharacterObject().transform.Find("AttackArea").gameObject;
+        GameObject attackArea = gameObject.transform.Find("AttackArea").gameObject;
         isAttacking = true;
         attackArea.SetActive(isAttacking);
     }
