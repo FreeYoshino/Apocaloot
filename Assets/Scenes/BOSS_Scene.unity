@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 65813965}
   - component: {fileID: 65813966}
   - component: {fileID: 65813967}
+  - component: {fileID: 65813968}
   m_Layer: 0
   m_Name: "\u5BF6\u7BB1"
   m_TagString: Untagged
@@ -227,6 +228,21 @@ MonoBehaviour:
   - {fileID: 1784327790}
   - {fileID: 226023585}
   - {fileID: 2057360855}
+--- !u!114 &65813968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65813964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d7d3b9f9b386647b96c0193fff5086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  treasureQA: {fileID: 1016795122}
+  controller: {fileID: 1016795126}
 --- !u!1 &66737312
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,7 +914,7 @@ GameObject:
   - component: {fileID: 371773190}
   - component: {fileID: 371773189}
   - component: {fileID: 371773188}
-  - component: {fileID: 371773187}
+  - component: {fileID: 371773191}
   m_Layer: 5
   m_Name: Button2
   m_TagString: Untagged
@@ -926,47 +942,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.6, y: -33.9}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &371773187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371773185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 505458044}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1833171413}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
 --- !u!114 &371773188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1011,10 +986,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -20730351569603159, guid: 499d4f784fe66774c951138c16d04cc7, type: 3}
-        m_TargetAssemblyTypeName: treasureQAController, Assembly-CSharp
-        m_MethodName: CheckAnswer
-        m_Mode: 3
+      - m_Target: {fileID: 371773191}
+        m_TargetAssemblyTypeName: treasureController, Assembly-CSharp
+        m_MethodName: onButtonClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1061,6 +1036,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371773185}
   m_CullTransparentMesh: 1
+--- !u!114 &371773191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371773185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d7d3b9f9b386647b96c0193fff5086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  treasureQA: {fileID: 1016795122}
+  controller: {fileID: 1016795126}
 --- !u!1 &386162346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,7 +1483,7 @@ GameObject:
   - component: {fileID: 759511060}
   - component: {fileID: 759511059}
   - component: {fileID: 759511058}
-  - component: {fileID: 759511057}
+  - component: {fileID: 759511061}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1521,47 +1511,6 @@ RectTransform:
   m_AnchoredPosition: {x: -36, y: -33.9}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &759511057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 759511055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 505458044}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1833171413}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &759511058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1606,10 +1555,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -20730351569603159, guid: 499d4f784fe66774c951138c16d04cc7, type: 3}
-        m_TargetAssemblyTypeName: treasureQAController, Assembly-CSharp
-        m_MethodName: CheckAnswer
-        m_Mode: 3
+      - m_Target: {fileID: 759511061}
+        m_TargetAssemblyTypeName: treasureController, Assembly-CSharp
+        m_MethodName: onButtonClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1656,6 +1605,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759511055}
   m_CullTransparentMesh: 1
+--- !u!114 &759511061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759511055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d7d3b9f9b386647b96c0193fff5086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  treasureQA: {fileID: 1016795122}
+  controller: {fileID: 1016795126}
 --- !u!1 &769142385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,6 +2107,7 @@ GameObject:
   - component: {fileID: 1016795125}
   - component: {fileID: 1016795124}
   - component: {fileID: 1016795123}
+  - component: {fileID: 1016795126}
   m_Layer: 5
   m_Name: treasureQA
   m_TagString: Untagged
@@ -2214,6 +2179,28 @@ RectTransform:
   m_AnchoredPosition: {x: 584.875, y: 225.50003}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1016795126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016795122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e09ad62c1199996469be746bd6ab3b9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  successful: {fileID: 0}
+  fail: {fileID: 0}
+  treasureQA: {fileID: 1016795122}
+  questionBank: {fileID: 11400000, guid: 00dc0963120fc4c45b191f7d117e49b8, type: 2}
+  dialogueBox: {fileID: 1016795122}
+  questionText: {fileID: 1722986778}
+  answerButtons:
+  - {fileID: 1784327790}
+  - {fileID: 226023585}
+  - {fileID: 2057360855}
 --- !u!1 &1391204398
 GameObject:
   m_ObjectHideFlags: 0
@@ -6088,7 +6075,7 @@ GameObject:
   - component: {fileID: 2131168256}
   - component: {fileID: 2131168255}
   - component: {fileID: 2131168254}
-  - component: {fileID: 2131168253}
+  - component: {fileID: 2131168257}
   m_Layer: 5
   m_Name: Button3
   m_TagString: Untagged
@@ -6116,47 +6103,6 @@ RectTransform:
   m_AnchoredPosition: {x: 35.1, y: -33.9}
   m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2131168253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131168251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 4
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 505458044}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1833171413}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
 --- !u!114 &2131168254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6201,10 +6147,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -20730351569603159, guid: 499d4f784fe66774c951138c16d04cc7, type: 3}
-        m_TargetAssemblyTypeName: treasureQAController, Assembly-CSharp
-        m_MethodName: CheckAnswer
-        m_Mode: 3
+      - m_Target: {fileID: 2131168257}
+        m_TargetAssemblyTypeName: treasureController, Assembly-CSharp
+        m_MethodName: onButtonClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6251,6 +6197,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131168251}
   m_CullTransparentMesh: 1
+--- !u!114 &2131168257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131168251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03d7d3b9f9b386647b96c0193fff5086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  treasureQA: {fileID: 1016795122}
+  controller: {fileID: 1016795126}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
