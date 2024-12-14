@@ -14,7 +14,6 @@ public class AttackDetect : MonoBehaviour
             {
                 Debug.Log("§ðÀ»¼Ä¤H");
             }
-            Destroy(gameObject);
         }
     }
 }
