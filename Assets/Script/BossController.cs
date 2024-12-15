@@ -20,8 +20,10 @@ public class BossController : MonoBehaviour
     float ThrowCD = 5f;    //丟刀CD
     float IdleCD;          //閒置CD
     float MoveCD;         //移動CD
-    float Jumptime = 2f; //跳的CD
+    float Jumptime = 1f; //跳的CD
     float rayLength = 2.4f; //偵測高度
+    float groundlength = 0.8f; //偵測是否轉向
+    float BossCollider = 1.4f; //偵測是否轉向，稍大於Bosscollider
     float raydis = 5f;   //偵測是否跳的距離
     float direction;  // Boss 方向
     float JumpCD = 0f; // 跳的CD是否還在
@@ -62,70 +64,67 @@ public class BossController : MonoBehaviour
     void Update()
     {
         Debug.Log(rigidbody2D.velocity);
-        
         direction = transform.localScale.x > 0 ? 1 : -1;
         RaycastHit2D hit = Physics2D.Raycast(transform.position+new Vector3(raydis*direction,0,0), Vector2.up, rayLength, bridgeLayer);
+        RaycastHit2D turn = Physics2D.Raycast(transform.position + new Vector3(BossCollider * direction,0,0), Vector3.down, groundlength);
 
-        if (JumpCD == 1) 
-        {
-            time += Time.deltaTime;
-            if (time >= Jumptime)
-            {
-                time = 0;
-                JumpCD = 0f;
-            }
-        }
-        //是否要跳
-        if (JumpCD == 0f)
-        {
-            if (hit.collider != null)
-            {
-                CD = 0;
-                JumpCD = 1f;
-                //Debug.Log("Detected bridge: " + hit.collider.gameObject.name);
-                rigidbody2D.velocity = new Vector2(JumpX,JumpForce); // 設置垂直速度
-                animator.SetTrigger("Bossjump");
-                animator.speed = JumpSpeed;
-                
-
-            }
-        }
-        //設定角色是否轉向
-        if (transform.position.x > NowPosition.x + dis)
-        {
-            key = -1f;
-        }
-        else if (transform.position.x < NowPosition.x - dis)
-        {
-            key = 1f;
-        }
-        if (rigidbody2D.velocity != new Vector2(0, gravity))
-
-        {
-            transform.localScale = new Vector2(9f * key, 9f);
-            rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-            animator.SetTrigger("BossMove");
-        }
-       
-        
-
-        if(CD > MoveCD)
-        {
-            transform.localScale = new Vector2(9f * key, 9f);
-            rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-            ThrowCD = 5f;
-            CD = 0;
-        }
-
-
-
-// isGrounded = Physics2D.OverlapCircle(transform.position+ground, checkRadius, bridgeLayer);
-      //  if (isGrounded)
+        isGrounded = Physics2D.OverlapCircle(transform.position + ground, checkRadius, bridgeLayer);
+        if (isGrounded)
         {
             Debug.Log("isgrounded");
-            
-            
-            
+            if (JumpCD == 1)
+            {
+                time += Time.deltaTime;
+                if (time >= Jumptime)
+                {
+                    time = 0;
+                    JumpCD = 0f;
+                }
+            }
+            //是否要跳
+            if (JumpCD == 0f)
+            {
+                if (hit.collider != null)
+                {
+                    CD = 0;
+                    JumpCD = 1f;
+                    //Debug.Log("Detected bridge: " + hit.collider.gameObject.name);
+                    rigidbody2D.velocity = new Vector2(JumpX, JumpForce); // 設置垂直速度
+                    animator.SetTrigger("Bossjump");
+                    animator.speed = JumpSpeed;
+
+
+                }
+            }
+            //設定角色是否轉向
+            // if (transform.position.x > NowPosition.x + dis)
+
+            //else if (transform.position.x < NowPosition.x - dis)
+            //{
+            //key = 1f;
+            //}
+            if (turn.collider != null)
+            {
+                key *= -1;
+            }
+            if (rigidbody2D.velocity != new Vector2(0, gravity))
+
+            {
+                transform.localScale = new Vector2(9f * key, 9f);
+                rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
+                animator.SetTrigger("BossMove");
+            }
+
+
+
+            if (CD > MoveCD)
+            {
+                transform.localScale = new Vector2(9f * key, 9f);
+                rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
+                ThrowCD = 5f;
+                CD = 0;
+            }
+
             //丟刀設定
             CD += Time.deltaTime;
             if (CD > IdleCD)
@@ -145,7 +144,6 @@ public class BossController : MonoBehaviour
 
             }
         }
-
 
 
 
@@ -264,6 +262,7 @@ public class BossController : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position+ground, checkRadius);
         Gizmos.DrawLine(transform.position + new Vector3(raydis * 1, 0, 0), transform.position + new Vector3(raydis * 1, 0, 0) + Vector3.up * rayLength);
+        Gizmos.DrawLine(transform.position + new Vector3(BossCollider * 1, 0, 0) + Vector3.up * groundlength, transform.position + new Vector3(BossCollider * 1, 0, 0) + Vector3.down * groundlength);
     }
 
 }
