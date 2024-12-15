@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     // 單例模式
-    static GameManager instance;
+    public static GameManager instance;
     public CharacterData[] allCharacter;
     [Header("Events")]
     [Space]
@@ -82,7 +82,18 @@ public class GameManager : MonoBehaviour
             OnLoadScene.Invoke();
         }
     }
-
+    public void GameOver(bool result)
+    {
+        if (result)
+        {
+            // 勝利
+        }
+        else
+        {
+            // 失敗
+            Debug.Log("角色死亡,遊戲失敗");
+        }
+    }
     public static void LoadFirstScene()
     {
         SceneManager.LoadScene("FirstScene");
