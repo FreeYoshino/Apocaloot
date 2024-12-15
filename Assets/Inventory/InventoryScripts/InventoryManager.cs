@@ -6,7 +6,7 @@ using TMPro;
 public class InventoryManager : MonoBehaviour
 {
     // 單例模式
-    static InventoryManager instance;
+    public static InventoryManager instance;
 
     public Inventory myBag;             // 對應到的背包
     public Item[] allItems;             // 所有道具的表
@@ -50,7 +50,7 @@ public class InventoryManager : MonoBehaviour
         myBag.itemList.Clear();
         for (int i = 0; i < allItems.Length; i++)
         {
-            allItems[i].itemHeld = 1;
+            allItems[i].itemHeld = 0;
         }
     }   
     public void OnUseButtonClicked()
@@ -75,6 +75,22 @@ public class InventoryManager : MonoBehaviour
                 message.text = "This item can't used.";
             }
         }
+    }
+    public void GetRandomItem()
+    {
+        // 獲得隨機道具的方法
+        int index = Random.Range(0, allItems.Length);       // 隨機道具索引
+        Item item = allItems[index];                        // 隨機道具
+        if (!myBag.itemList.Contains(item))
+        {
+            // 將背包添加該道具
+            myBag.itemList.Add(item);
+            item.itemHeld = 1; 
+        }     
+        else { 
+            allItems[index].itemHeld += 1; 
+        }
+        RefreshItem();
     }
     public static void UpdateItemInfo(Item item)
     {

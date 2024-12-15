@@ -47,7 +47,6 @@ public class CharacterManager : MonoBehaviour
         // Àò¨ú¨¤¦âData
         if (instance.myCharacterData == null)
         {
-            Debug.Log("Return Null");
             return null;
         }
         return instance.myCharacterData;
@@ -74,6 +73,10 @@ public class CharacterManager : MonoBehaviour
     {
         instance.myCharacterData.characterHp -= value;
         instance.myHealthBar.SetHealth(myCharacterData.characterHp);
+        if (instance.myCharacterData.characterHp <= 0)
+        {
+            GameManager.instance.GameOver(false);
+        }
     }
     public void IncreasePower(float value)
     {
