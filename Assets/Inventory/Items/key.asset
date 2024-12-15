@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79c3871b10c0e54f9c4556cefa2cedc, type: 3}
   m_Name: key
   m_EditorClassIdentifier: 
-  itemName: TestItem
+  itemName: Key
   itemImage: {fileID: 21300000, guid: ceb9b906724968e488dbea55e0e812cd, type: 3}
-  itemHeld: 1
-  itemInfo: Can be used to open treasure chests
-  use: 1
+  itemHeld: 0
+  itemInfo: Key item to progress to the next level.
+  use: 0
   itemHealing: 0
   itemHp: 200
   itemPower: 100
