@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ public class BulletController : MonoBehaviour
     private float bulletSpeed = 10f;
     private Rigidbody2D rb;
     private Vector3 direction;      // 子彈移動方向
+    public GameObject PopUpTextPrefab;    // 彈出文字的Prefab
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,9 +31,17 @@ public class BulletController : MonoBehaviour
             if (collision != null && collision.CompareTag("Enemy"))
             {
                 Debug.Log("攻擊敵人");
+                ShowDamageText(collision.transform);
             }
             Destroy(gameObject);
         }
+    }
+    private void ShowDamageText(Transform transform)
+    {
+        GameObject popupText = Instantiate(PopUpTextPrefab);                     // 生成預置體
+        GameObject text = popupText.transform.Find("Canvas/Text").gameObject;    // 找到子物件
+        popupText.GetComponent<DamageTextController>().SetPosition(transform.position);
+        popupText.GetComponent<DamageTextController>().SetDamageText((int)CharacterManager.GetCharacterData().characterPower);
     }
     private void OnBecameInvisible()
     {
