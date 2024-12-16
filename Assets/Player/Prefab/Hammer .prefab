@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eefe3122e6f8bda458d7527d65f58bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PopUpTextPrefab: {fileID: 6715787697133523180, guid: bf84332465e97a142a5dd3a4d53da8fd, type: 3}
 --- !u!1 &6579678306300737742
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,3 +430,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2305a978528f39f4ba7c399c211376a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletGenerator: {fileID: 0}

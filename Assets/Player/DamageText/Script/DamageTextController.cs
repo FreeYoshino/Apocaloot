@@ -11,7 +11,7 @@ public class DamageTextController : MonoBehaviour
     private TMP_Text text;              // TMP
     private void Awake()
     {
-        text = GetComponent<TMP_Text>();
+        text = GetComponentInChildren<TMP_Text>();
         color = text.color;
     }
     private void FixedUpdate()
@@ -28,5 +28,11 @@ public class DamageTextController : MonoBehaviour
     public void SetDamageText(int damage)
     {
         text.text = damage.ToString();
+    }
+    public void SetPosition(Vector3 poition)
+    {
+        // 將世界座標轉為螢幕座標
+        Vector3 screenPosition = Camera.main.WorldToScreenPoint(poition);
+        text.GetComponent<RectTransform>().position = screenPosition;
     }
 }
