@@ -53,12 +53,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;        //¤Á´«¸õÅDª¬ºAÅÜ¼Æ
-            animator.SetBool("isJumping", true);
+            animator.SetTrigger("isJumping");
         }
     }
     private void OnLanding()
     {
-        animator.SetBool("isJumping", false);
+        // animator.SetBool("isJumping", false);
     }
 
     void OpenMyBag()
