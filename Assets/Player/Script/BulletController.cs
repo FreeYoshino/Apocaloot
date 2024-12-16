@@ -32,6 +32,10 @@ public class BulletController : MonoBehaviour
             }
             Destroy(gameObject);
         }
-        
+    }
+    private void OnBecameInvisible()
+    {
+        // 子彈超出視野外
+        Destroy(gameObject);
     }
 }
