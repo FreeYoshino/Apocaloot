@@ -5,19 +5,21 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    public float bulletSpeed = 10f;
+    private float bulletSpeed = 10f;
     private Rigidbody2D rb;
-    private float direction;
+    private Vector3 direction;      // 子彈移動方向
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        direction = Mathf.Sign(CharacterManager.GetCharacterObject().transform.localScale.x);
     }
-
-    private void Start()
+    public void SetDirection(Vector3 direction)
     {
-        rb.velocity = new Vector2(bulletSpeed * direction, 0);
-        transform.localScale = new Vector3(direction*transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        this.direction = direction;
+        rb.velocity = direction * 10;
+        // 計算子彈的旋轉角度(對x軸弧度)，轉換為度數
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        // 設置子彈旋轉，將計算的角度應用於子彈的 Z 軸
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,6 +32,10 @@ public class BulletController : MonoBehaviour
             }
             Destroy(gameObject);
         }
-        
+    }
+    private void OnBecameInvisible()
+    {
+        // 子彈超出視野外
+        Destroy(gameObject);
     }
 }

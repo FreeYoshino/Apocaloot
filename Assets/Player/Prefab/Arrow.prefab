@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8803222707621527436}
   - component: {fileID: 1634386514214716896}
   - component: {fileID: -4692243212509052676}
-  - component: {fileID: 2824062967589219021}
   - component: {fileID: 9006216112158668176}
+  - component: {fileID: 2824062967589219021}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 2333164981487142539}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.392, y: -3.084, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.5, z: 1}
+  m_LocalPosition: {x: -1.4646, y: -3.084, z: 0}
+  m_LocalScale: {x: 0.087220006, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -130,21 +130,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 11.36, y: 0.72}
+  m_Size: {x: 10.7363205, y: 0.38160503}
   m_EdgeRadius: 0
---- !u!114 &2824062967589219021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2333164981487142539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c40c0e34e9f8ae942b88de7152c8504c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletSpeed: 5
 --- !u!50 &9006216112158668176
 Rigidbody2D:
   serializedVersion: 4
@@ -172,3 +159,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2824062967589219021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2333164981487142539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40c0e34e9f8ae942b88de7152c8504c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

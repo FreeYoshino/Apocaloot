@@ -5,19 +5,12 @@ using UnityEngine.TextCore.Text;
 
 public class BulletGenerator : MonoBehaviour
 {
-    public GameObject arrowPrefab, bulletPrefab;
-    public void Fire()
+    public GameObject bulletPrefab;                         // 彈藥的Prefab
+    public Transform FirePosition;                          // 子彈的發射位置
+    public void Fire(Vector3 direction)                     
     {
         // 開火
-        Vector3 position = CharacterManager.GetCharacterObject().transform.position;
-        switch (CharacterManager.GetCharacterData().characterType)
-        {
-            case CharacterData.CharacterType.Archer:
-                Instantiate(arrowPrefab, position, Quaternion.identity);
-                break;
-            case CharacterData.CharacterType.Shooter:
-                Instantiate(bulletPrefab, position, Quaternion.identity);
-                break;
-        }
+        GameObject bullet = Instantiate(bulletPrefab, FirePosition.position, Quaternion.identity);
+        bullet.GetComponent<BulletController>().SetDirection(direction);
     }
 }

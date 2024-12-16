@@ -1132,6 +1132,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4175588131995921162, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
+      propertyPath: FirePosition
+      value: 
+      objectReference: {fileID: 1924411018}
+    - target: {fileID: 4175588131995921162, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 2333164981487142539, guid: 02894c31aaab6464fb37f3d0013f2450, type: 3}
     - target: {fileID: 4177990900025799131, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
       propertyPath: m_Name
       value: Archer
@@ -1697,7 +1705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ca6ab583c46af4ab556b5880207b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCharacterData: {fileID: 11400000, guid: e5627fd6907871e48bab3c3ec787a04e, type: 2}
+  myCharacterData: {fileID: 11400000, guid: b01d0d361dfa0f8448bd8c7057b21772, type: 2}
   myHealthBar: {fileID: 428444465}
 --- !u!4 &770188836
 Transform:
@@ -3687,6 +3695,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857470083}
   m_CullTransparentMesh: 1
+--- !u!4 &1924411018 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6439492610465243943, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
+  m_PrefabInstance: {fileID: 299482028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1986336194
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class PlayerAttack : MonoBehaviour
     private bool isAttacking = false;       // 是否在攻擊
     public BulletGenerator bulletGenerator; // 子彈生成器
     private Animator animator;              // 動畫
+    private Vector3 mousePosition;          // 滑鼠點擊的位置 
     private void Start()
     {
         characterData = CharacterManager.GetCharacterData();
@@ -36,17 +37,15 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         animator.SetTrigger("Attack");
-        switch (characterData.characterType)
+        if (characterData.characterType == CharacterData.CharacterType.Hammer)
         {
-            case CharacterData.CharacterType.Archer:
-                FireProjectile();
-                break;
-            case CharacterData.CharacterType.Shooter:
-                FireProjectile();
-                break;
-            case CharacterData.CharacterType.Hammer:
-                HammerAttack();
-                break;
+            // 槌子攻擊
+            HammerAttack();
+        }
+        else
+        {
+            // 遠程攻擊
+            FireProjectile();
         }
     }
 
@@ -62,6 +61,9 @@ public class PlayerAttack : MonoBehaviour
     {
         // 發射子彈類攻擊
         Debug.Log("開火");
-        bulletGenerator.Fire();
+        mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);    // 將點擊的位置轉為世界座標
+        mousePosition.z = 0f;
+        Vector3 shootDirection = (mousePosition - gameObject.transform.position).normalized;    // 計算射擊方向
+        bulletGenerator.Fire(shootDirection);
     }
 }
