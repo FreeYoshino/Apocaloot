@@ -8,4 +8,17 @@ public class ButtonController : MonoBehaviour
     {
         GameManager.LoadFirstScene();
     }
+
+    public void LoadFirstScene()
+    {
+        GameManager.LoadFirstScene();
+    }
+    public void LoadSecondScene()
+    {
+        GameManager.LoadSecondScene();
+    }
+    public void LoadBossScene()
+    {
+        GameManager.LoadBossScene();
+    }
 }
