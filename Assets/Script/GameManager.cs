@@ -76,9 +76,8 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "FirstScene")
+        if (scene.name == "FirstScene" || scene.name == "SecondScene" || scene.name == "BossScene")
         {
-            // instance.SetCharacterActive(CharacterManager.GetCharacterData());
             OnLoadScene.Invoke();
         }
     }
@@ -98,5 +97,12 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("FirstScene");
     }
-
+    public static void LoadSecondScene()
+    {
+        SceneManager.LoadScene("SecondScene");
+    }
+    public static void LoadBossScene()
+    {
+        SceneManager.LoadScene("Boss_Scene");
+    }
 }
