@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviour
                 continue;
             }
             GameObject.Find(allCharacter[i].characterName).SetActive(false);
+            Debug.Log(allCharacter[i].characterName);
         }
     }
     private void OnDestroy()

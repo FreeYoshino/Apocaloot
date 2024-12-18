@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 3208763206392100470}
   - component: {fileID: 7172873921801849578}
   m_Layer: 3
-  m_Name: 'Hammer '
+  m_Name: Hammer
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,7 +238,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 939802667, guid: 3cc688f7da76f3d40b0840dc133ac182, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -1657,7 +1657,7 @@ MonoBehaviour:
   smooothTime: 0.1
   offest: {x: 0, y: 0, z: 0}
   minX: 0.17
-  maxX: 82.5
+  maxX: 90
   minY: 0.4
   maxY: 35
 --- !u!1 &566835155
@@ -20720,11 +20720,11 @@ PrefabInstance:
       objectReference: {fileID: 775057902}
     - target: {fileID: 2052806164331629888, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.46
+      value: 98.31
       objectReference: {fileID: 0}
     - target: {fileID: 2052806164331629888, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.3
+      value: 30.18
       objectReference: {fileID: 0}
     - target: {fileID: 2052806164331629888, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
       propertyPath: m_LocalPosition.z
