@@ -18,10 +18,13 @@ public class CrabController : MonoBehaviour
     Vector2 now = new Vector2();
     Rigidbody2D rigidbody2D;
     Animator animator;
+    public BoxCollider2D attackCollider;
 
+    
     // Start is called before the first frame update
     void Start()
     {
+        attackCollider = GetComponent<BoxCollider2D>();
         rigidbody2D = GetComponent<Rigidbody2D>();
         start = transform.position;
         animator = GetComponent<Animator>();
@@ -59,10 +62,12 @@ public class CrabController : MonoBehaviour
         }
         if (time > AttackCD)
         {
+            StartAttack();
             animator.SetTrigger("CrabAttack");
         }
         if (time > MoveCD)
         {
+            EndAttack();
             transform.localScale = new Vector2(5f * key, 5f);
             rigidbody2D.velocity = new Vector2(MoveSpeed * key, rigidbody2D.velocity.y);
             time = 0;
@@ -71,5 +76,17 @@ public class CrabController : MonoBehaviour
         Debug.Log("time"+time);
         
     }
+    void StartAttack()
+    {
+        // 設定攻擊時的碰撞大小
+        attackCollider.size = new Vector2(0.7f, 0.1f); // 增加碰撞寬度
+        attackCollider.offset = new Vector2(0f, -0.05f); // 偏移到手的位置
+    }
 
+    void EndAttack()
+    {
+        // 回復到預設大小
+        attackCollider.size = new Vector2(0.4f, 0.1f);
+        attackCollider.offset = new Vector2(0.0f, 0f);
+    }
 }
