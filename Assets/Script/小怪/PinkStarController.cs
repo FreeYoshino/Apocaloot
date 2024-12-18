@@ -8,7 +8,7 @@ public class PinkStarController : MonoBehaviour
 {
     float key = 1f;          //BOSS¬O§_Âà¦V
     float dis = 4f;
-    float AttackSpeed = 3f;
+    float AttackSpeed = 4f;
     float AttackAnimationSpeed = 0.3f;
     float AttackCD = 2f;
     float time = 0f;
