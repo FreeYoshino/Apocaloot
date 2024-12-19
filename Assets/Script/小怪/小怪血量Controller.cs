@@ -12,10 +12,7 @@ public class 小怪血量Controller : MonoBehaviour
 
         UpdateHealthDisplay(currentHealth, heartImages);
 
-        if (currentHealth == 0)
-        {
-            Die();
-        }
+        
     }
 
     public void UpdateHealthDisplay(int currentHealth, GameObject[] heartImages)
