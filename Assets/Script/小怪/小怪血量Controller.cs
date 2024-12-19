@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class 小怪血量Controller : MonoBehaviour
 {
-    public void TakeDamage(int currentHealth, GameObject[] heartImages)
+    public void TakeDamage(int currentHealth, GameObject[] heartImages,GameObject gameObject)
     {
         currentHealth -= 1;
         if (currentHealth < 0)
@@ -12,7 +12,10 @@ public class 小怪血量Controller : MonoBehaviour
 
         UpdateHealthDisplay(currentHealth, heartImages);
 
-        
+        if (currentHealth == 0)
+        {
+            Die(gameObject);
+        }
     }
 
     public void UpdateHealthDisplay(int currentHealth, GameObject[] heartImages)
@@ -24,7 +27,7 @@ public class 小怪血量Controller : MonoBehaviour
         }
     }
 
-    public void Die()
+    public void Die(GameObject gameObject)
     {
         // 小怪死亡的處理
         Debug.Log(gameObject.name + " 已死亡");

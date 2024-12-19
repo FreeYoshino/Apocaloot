@@ -17,7 +17,6 @@ public class PinkStarController : MonoBehaviour
     Rigidbody2D rigidbody2D;
     Animator animator;
 
-    float temp = 10f;
     int maxHealth = 3;             // 最大血量
     private int currentHealth;            // 當前血量
     private GameObject[] heartImages;     // 愛心圖片陣列
@@ -54,16 +53,29 @@ public class PinkStarController : MonoBehaviour
     public void TakeDamage()
     {
         // 呼叫血量管理器更新血量
-        healthController.TakeDamage(currentHealth, heartImages);
+        //animator.SetTrigger("PinkStarHurt");
+        
+        //if (currentHealth == 0) 
+        //{
+        //    animator.SetTrigger("PinkStarDie");  
+        //}
+        healthController.TakeDamage(currentHealth, heartImages, this.gameObject);
         currentHealth--; // 更新當前血量
+
+
     }
     // Update is called once per frame
     void Update()
     {
-        if (time > temp)
-        {
-            TakeDamage();
-        }
+        // if(子彈打到)
+        // {
+        //     TakeDamage();
+        // }
+        //if (time > temp) 
+        //{
+        //    TakeDamage();
+        //}
+
         time += Time.deltaTime;
         now = transform.position;
         if (now.x > start.x + dis)
@@ -91,7 +103,7 @@ public class PinkStarController : MonoBehaviour
             animator.speed = AttackAnimationSpeed;
             transform.localScale = new Vector2(5f * key, 5f);
             rigidbody2D.velocity = new Vector2(AttackSpeed * key, rigidbody2D.velocity.y);
-            //time = 0; 
+            time = 0; 
         }
     }
 }
