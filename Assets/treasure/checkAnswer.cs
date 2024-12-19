@@ -49,6 +49,7 @@ public class checkAnswer : MonoBehaviour
         {
 
             Debug.Log("獲得寶物！");
+            InventoryManager.instance.GetRandomItem();
             successful.SetActive(true);
             fail.SetActive(false);
             // 在這裡執行獎勳或其他邏輯
