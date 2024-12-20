@@ -171,4 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c40c0e34e9f8ae942b88de7152c8504c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PopUpTextPrefab: {fileID: 0}
+  PopUpTextPrefab: {fileID: 6715787697133523180, guid: bf84332465e97a142a5dd3a4d53da8fd, type: 3}

@@ -65,7 +65,6 @@ public class CharacterController2D : MonoBehaviour
         {
             //設定角色的速度
             Vector3 targetVelocity = new Vector3(move, m_Rigidbody2D.velocity.y);
-            Debug.Log(targetVelocity);
             //利用.SmoothDamp()平滑過度 速度的變化
             //ref m_Velocity 使用參照的方式傳遞變數,用來儲存速度的變化
             m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
