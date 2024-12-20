@@ -273,6 +273,13 @@ MonoBehaviour:
   myBag: {fileID: 11400000, guid: 9063a2690bc56b54f88f9cca7a25f895, type: 2}
   allItems:
   - {fileID: 11400000, guid: e09539b4d17961742941b7652a381ae6, type: 2}
+  - {fileID: 11400000, guid: 9156c4e1cb9a6b44b9f31f9ae3ba2e00, type: 2}
+  - {fileID: 11400000, guid: 8900b1d60e22ab84ba91557498f94984, type: 2}
+  - {fileID: 11400000, guid: e674db7c62df1744997d0cf92922b8ec, type: 2}
+  - {fileID: 11400000, guid: 2b2947d0b3db77b489b9afe8b7a42f8a, type: 2}
+  - {fileID: 11400000, guid: e09539b4d17961742941b7652a381ae6, type: 2}
+  - {fileID: 11400000, guid: 8c9ce5436c6aa174cb1bea8d5c011297, type: 2}
+  - {fileID: 11400000, guid: 03e2f9af388124e4ca5c4f0b5531aa8a, type: 2}
   itemSelected: {fileID: 0}
   slotGrid: {fileID: 0}
   MessagePanel: {fileID: 0}
@@ -414,6 +421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35ca6ab583c46af4ab556b5880207b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myCharacterData: {fileID: 0}
+  myHealthBar: {fileID: 0}
 --- !u!4 &2006112930
 Transform:
   m_ObjectHideFlags: 0
