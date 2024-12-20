@@ -32,7 +32,7 @@ public class CameraController : MonoBehaviour
     private void LateUpdate()
     {
         Vector3 targetPosition = target.position + offest;         //設定Camera要移動到的位置
-
+        targetPosition.z=-1;
         // 限制相機的目標位置在指定範圍內
         targetPosition.x = Mathf.Clamp(targetPosition.x, minX, maxX);
         targetPosition.y = Mathf.Clamp(targetPosition.y, minY, maxY);
