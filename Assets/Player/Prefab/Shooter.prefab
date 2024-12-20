@@ -302,7 +302,7 @@ MonoBehaviour:
   m_AirControl: 0
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 375
   m_GroundCheck: {fileID: 6535803379456632099}
   m_CeilingCheck: {fileID: 3736057501501008962}
   OnLandEvent:
