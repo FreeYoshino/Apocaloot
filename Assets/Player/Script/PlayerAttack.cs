@@ -36,6 +36,7 @@ public class PlayerAttack : MonoBehaviour
     }
     private void Attack()
     {
+        isAttacking = true;
         animator.SetTrigger("Attack");
         if (characterData.characterType == CharacterData.CharacterType.Hammer)
         {

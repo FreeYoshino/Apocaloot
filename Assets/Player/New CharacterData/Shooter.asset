@@ -16,4 +16,5 @@ MonoBehaviour:
   characterMaxHp: 80
   characterHp: 80
   characterPower: 10
+  characterTimeToAttack: 0.5
   characterType: 1
