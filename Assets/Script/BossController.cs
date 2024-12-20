@@ -63,7 +63,7 @@ public class BossController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(rigidbody2D.velocity);
+        //Debug.Log(rigidbody2D.velocity);
         direction = transform.localScale.x > 0 ? 1 : -1;
         RaycastHit2D hit = Physics2D.Raycast(transform.position+new Vector3(raydis*direction,0,0), Vector2.up, rayLength, bridgeLayer);
         RaycastHit2D turn = Physics2D.Raycast(transform.position + new Vector3(BossCollider * direction,0,0), Vector3.down, groundlength);
@@ -71,7 +71,7 @@ public class BossController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(transform.position + ground, checkRadius, bridgeLayer);
         if (isGrounded)
         {
-            Debug.Log("isgrounded");
+            //Debug.Log("isgrounded");
             if (JumpCD == 1)
             {
                 time += Time.deltaTime;
