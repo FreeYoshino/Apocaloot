@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     CharacterData characterData;            // 角色Data
+    CharacterController2D characterController;// 角色控制腳本
     private float timer = 0f;               // 攻擊時間的timer
     private bool isAttacking = false;       // 是否在攻擊
     public BulletGenerator bulletGenerator; // 子彈生成器
@@ -14,6 +15,7 @@ public class PlayerAttack : MonoBehaviour
     {
         characterData = CharacterManager.GetCharacterData();
         animator = GetComponent<Animator>();
+        characterController = GetComponent<CharacterController2D>();
     }
     private void Update()
     {
@@ -65,6 +67,7 @@ public class PlayerAttack : MonoBehaviour
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);    // 將點擊的位置轉為世界座標
         mousePosition.z = 0f;
         Vector3 shootDirection = (mousePosition - gameObject.transform.position).normalized;    // 計算射擊方向
+        if (characterController.m_FacingRight != (shootDirection.x > 0)) characterController.Flip();    // 子彈發射方向與角色面朝方向不同Flip()
         bulletGenerator.Fire(shootDirection);
     }
 }
