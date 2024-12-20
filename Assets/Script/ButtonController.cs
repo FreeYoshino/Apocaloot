@@ -21,4 +21,9 @@ public class ButtonController : MonoBehaviour
     {
         GameManager.LoadBossScene();
     }
+    public void PlayerHurt()
+    {
+        GameObject player = CharacterManager.GetCharacterObject();
+        player.GetComponent<PlayerHurt>().Hurt(10f);
+    }
 }

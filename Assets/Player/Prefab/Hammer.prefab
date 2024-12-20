@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 8905389086598109380}
   - component: {fileID: 3208763206392100470}
   - component: {fileID: 7172873921801849578}
+  - component: {fileID: -5118948757358588121}
   m_Layer: 3
   m_Name: Hammer
   m_TagString: Player
@@ -288,9 +289,10 @@ MonoBehaviour:
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 375
   m_GroundCheck: {fileID: 7168430535473893384}
   m_CeilingCheck: {fileID: 3398410586482720209}
+  m_FacingRight: 1
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -431,3 +433,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletGenerator: {fileID: 0}
+--- !u!114 &-5118948757358588121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8834925003236766070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4ea5f49bb668c041adcbf9db5c9a9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

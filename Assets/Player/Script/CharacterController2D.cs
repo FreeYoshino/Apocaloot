@@ -21,7 +21,7 @@ public class CharacterController2D : MonoBehaviour
     private bool m_Grounded;            //判斷角色是否在地面上的布林值
     const float k_CeilingRadius = .2f;  //用來檢測角色頭頂是否有障礙物的圓形碰撞半徑
     private Rigidbody2D m_Rigidbody2D;  //角色的 Rigidbody2D，控制角色的物理行為
-    private bool m_FacingRight = true;  //紀錄角色當前面朝的方向，true 表示向右
+    public bool m_FacingRight = true;  //紀錄角色當前面朝的方向，true 表示向右
     private Vector3 m_Velocity = Vector3.zero; //儲存平滑速度時的速度值
 
     [Header("Events")]
@@ -65,7 +65,6 @@ public class CharacterController2D : MonoBehaviour
         {
             //設定角色的速度
             Vector3 targetVelocity = new Vector3(move, m_Rigidbody2D.velocity.y);
-            Debug.Log(targetVelocity);
             //利用.SmoothDamp()平滑過度 速度的變化
             //ref m_Velocity 使用參照的方式傳遞變數,用來儲存速度的變化
             m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
@@ -87,7 +86,7 @@ public class CharacterController2D : MonoBehaviour
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));       //施加向上的跳躍力
         }
     }
-    private void Flip()                         //用來翻轉角色面向的函式
+    public void Flip()                         //用來翻轉角色面向的函式
     {
         m_FacingRight = !m_FacingRight;         //切換角色面向
 

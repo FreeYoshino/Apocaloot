@@ -33,6 +33,6 @@ public class DamageTextController : MonoBehaviour
     {
         // 將世界座標轉為螢幕座標
         Vector3 screenPosition = Camera.main.WorldToScreenPoint(poition);
-        text.GetComponent<RectTransform>().position = screenPosition;
+        text.GetComponent<RectTransform>().position = screenPosition ;
     }
 }
