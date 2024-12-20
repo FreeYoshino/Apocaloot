@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 637619518648089017}
   - component: {fileID: 8397846246622054723}
   - component: {fileID: 4175588131995921162}
+  - component: {fileID: 8344274019397306260}
   m_Layer: 3
   m_Name: Archer
   m_TagString: Player
@@ -136,6 +137,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_GroundCheck: {fileID: 2261088699588452084}
   m_CeilingCheck: {fileID: 6919774251608491404}
+  m_FacingRight: 1
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -290,6 +292,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2181351295382911839, guid: 10169d9582cc77b4682be3356cc2c010, type: 3}
   FirePosition: {fileID: 6439492610465243943}
+--- !u!114 &8344274019397306260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4177990900025799131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4ea5f49bb668c041adcbf9db5c9a9dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4884939689571699717
 GameObject:
   m_ObjectHideFlags: 0
