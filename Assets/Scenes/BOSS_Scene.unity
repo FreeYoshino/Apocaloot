@@ -235,6 +235,7 @@ MonoBehaviour:
   index: 0
   treasureQA: {fileID: 1626967434}
   controller: {fileID: 1626967436}
+  treasure: {fileID: 65813964}
 --- !u!1 &66737312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2661,6 +2662,7 @@ MonoBehaviour:
   index: 1
   treasureQA: {fileID: 1626967434}
   controller: {fileID: 1626967436}
+  treasure: {fileID: 0}
 --- !u!114 &1474683081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2822,6 +2824,7 @@ MonoBehaviour:
   index: 0
   treasureQA: {fileID: 1626967434}
   controller: {fileID: 1626967436}
+  treasure: {fileID: 0}
 --- !u!114 &1595609882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3923,6 +3926,7 @@ MonoBehaviour:
   index: 2
   treasureQA: {fileID: 1626967434}
   controller: {fileID: 1626967436}
+  treasure: {fileID: 0}
 --- !u!114 &1881636475
 MonoBehaviour:
   m_ObjectHideFlags: 0
