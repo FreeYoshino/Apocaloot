@@ -12,7 +12,11 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40f;            
     float horizontalMove = 0f;
     bool jump = false;
+
     
+
+   
+
     private void OnEnable()                             //物件啟用時自動調用
     {
         //訂閱OnLandEvent事件,並且設定this.OnLanding為調用的函式
@@ -44,12 +48,17 @@ public class PlayerMovement : MonoBehaviour
         {
 
         }
+
+        
+
     }
     void Movement()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;     //獲取水平的輸入並*speed,注:GetAxisRaw("Horizontal")回傳-1 or 0 or 1
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));          //給animator中的Speed值,以切換動畫
-
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));//給animator中的Speed值,以切換動畫
+        
+        
+        
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;        //切換跳躍狀態變數

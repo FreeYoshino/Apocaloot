@@ -8,6 +8,7 @@ public class treasureController : MonoBehaviour
     public GameObject treasureQA;
     public checkAnswer controller;
     private bool isneartreasure = false;
+    public GameObject treasure;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -31,8 +32,10 @@ public class treasureController : MonoBehaviour
         if (isneartreasure == true && Input.GetKeyDown(KeyCode.F))
         {
             Debug.Log("開啟寶箱");
+            Destroy(treasure);
             treasureQA.SetActive(true);
             controller.DisplayRandomQuestion();
+            
         }
     }
     public void onButtonClick()
