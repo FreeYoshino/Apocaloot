@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using JetBrains.Annotations;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -23,7 +24,7 @@ public class BossController : MonoBehaviour
     float Jumptime = 1f; //跳的CD
     float rayLength = 2.4f; //偵測高度
     float groundlength = 0.8f; //偵測是否轉向
-    float BossCollider = 1.4f; //偵測是否轉向，稍大於Bosscollider
+    float BossCollider = 3f; //偵測是否轉向，稍大於Bosscollider
     float raydis = 5f;   //偵測是否跳的距離
     float direction;  // Boss 方向
     float JumpCD = 0f; // 跳的CD是否還在
@@ -32,13 +33,14 @@ public class BossController : MonoBehaviour
     bool isGrounded; // 是否在地面上
     float checkRadius = 0.3f; // 檢測是否在地上的半徑
     float gravity = 0f;  //重力
+    [SerializeField]float palyerCD = 5f;
     Vector3 ground = new Vector3(0, -1f,0);
     Vector2 NowPosition;
     Vector2 start = new Vector2();
-    //public Transform PlayerTransform;
+    GameObject PlayerTransform;
     //取的地形的橋的圖層
     public LayerMask bridgeLayer;
-    
+    GameObject player;
     Animator animator;
 
     Rigidbody2D rigidbody2D;
@@ -57,7 +59,7 @@ public class BossController : MonoBehaviour
         start = transform.position;
         transform.localScale = new Vector2(9f * key, 9f);
         rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-
+        PlayerTransform = CharacterManager.GetCharacterObject();
     }
 
     // Update is called once per frame
@@ -103,9 +105,16 @@ public class BossController : MonoBehaviour
             //{
             //key = 1f;
             //}
-            if (turn.collider != null)
+            if (transform.position.x > 19 || transform.position.x < -18)
             {
                 key *= -1;
+            }
+            else if (turn.collider != null)
+            {
+                if (!turn.collider.CompareTag("Player"))
+                {
+                    key *= -1; // 執行反轉邏輯
+                }
             }
             if (rigidbody2D.velocity != new Vector2(0, gravity))
 
@@ -144,117 +153,105 @@ public class BossController : MonoBehaviour
 
             }
         }
+        float PlayerDistance = Vector2.Distance(transform.position, PlayerTransform.transform.position);
+        Vector2 PlayerPosition = PlayerTransform.transform.position;
+        if (PlayerDistance < 3f)
+        {
+            animator.SetTrigger("BossMove2Idle");
 
-
-
-
-            
-            //transform.localScale = new Vector2(7f * key, 7f);
+            //if (transform.position.x > PlayerPosition.x)
+            //{
+            //    key = -1f;
+            //}
+            //else if (transform.position.x < PlayerPosition.x)
+            //{
+            //    key = 1f;
+            //}
+            //transform.localScale = new Vector2(9f * key, 9f);
             //rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
 
+            animator.SetTrigger("attack3");
+            animator.speed = 0.5f;
 
-            //float PlayerDistance = Vector2.Distance(transform.position, PlayerTransform.position);
-            //if (PlayerDistance < 10f)
-            //{
-            //    CD += Time.deltaTime;
-            //    if (transform.position.x > PlayerTransform.position.x)
-            //    {
-            //        key = -1f;
-            //    }
-            //    else if (transform.position.x < PlayerTransform.position.x)
-            //    {
-            //        key = 1f;
-            //    }
-            //    if (CD > 2)
-            //    {
-            //        transform.localScale = new Vector2(7f * key, 7f);
-            //        animator.SetTrigger("throw");
-            //        animator.speed = 0.5f;
-            //        CD = 0;
-            //        GameObject spin = Instantiate(SwordPrefab);
-            //        spin.transform.position = gameObject.transform.position;
-            //    }
-            //transform.localScale = new Vector2(7f * key, 7f);
-            //rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-
-
-            //}
-            //if (PlayerDistance < 5f)
-            //{
-            //    if (transform.position.x > PlayerTransform.position.x)
-            //    {
-            //        key = -1f;
-            //    }
-            //    else if (transform.position.x < PlayerTransform.position.x)
-            //    {
-            //        key = 1f;
-            //    }
-            //    transform.localScale = new Vector2(7f * key, 7f);
-            //    rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-            //    animator.SetTrigger("attack3");
-            //    animator.speed = 0.5f;
-            //}
-            //else
-            //{
-            //    if (transform.position.x > start.x + dis)
-            //    {
-            //        key = -1f;
-            //    }
-            //    else if (transform.position.x < start.x - dis)
-            //    {
-            //        key = 1f;
-            //    }
-            //    transform.localScale = new Vector2(7f * key, 7f);
-            //    rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-            //}
-
-
-
-
-            //    float key = 0f;
-            //    if (Input.GetKeyDown(KeyCode.G))
-            //    {
-            //        animator.SetTrigger("attack3");
-            //        animator.speed = 0.87f;
-            //    }
-
-            //    if (Input.GetKeyDown(KeyCode.F))
-            //    {
-            //        animator.SetTrigger("throw");
-            //        animator.speed = 0.87f;
-            //        GameObject spin = Instantiate(SwordPrefab);
-            //        spin.transform.position = gameObject.transform.position;
-            //    }
-
-            //    if (Input.GetKey(KeyCode.LeftArrow))
-            //    {
-            //        key = -1f;
-            //    }
-            //    if (Input.GetKey(KeyCode.RightArrow))
-            //    { 
-            //        key = 1f;
-            //    }
-            //    if (rigidbody2D.velocity.y == 0 && Input.GetKeyDown(KeyCode.Space))
-            //    {
-            //        animator.SetTrigger("jump_sword");
-            //        animator.speed = 0.87f;
-            //        rigidbody2D.AddForce(transform.up * JumpForce);
-            //    }
-            //    float speedx = Mathf.Abs(rigidbody2D.velocity.x);
-            //    if (speedx < MaxSpeed)
-            //    {
-            //        rigidbody2D.AddForce(transform.right * key * WalkForce);
-            //    }
-            //    if (key != 0)
-            //    {
-            //        transform.localScale = new Vector2(7f * key, 7f);
-
-            //    }
-            //    if (rigidbody2D.velocity.y == 0)
-            //    {
-            //        animator.speed = speedx / 2.0f;
-            //    }
         }
+        //transform.localScale = new Vector2(7f * key, 7f);
+        //rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
+
+        //float PlayerDistance = Vector2.Distance(transform.position, PlayerTransform.position);
+        //if (PlayerDistance < 10f)
+        //{
+        //    CD += Time.deltaTime;
+        //    if (transform.position.x > PlayerTransform.position.x)
+        //    {
+        //        key = -1f;
+        //    }
+        //    else if (transform.position.x < PlayerTransform.position.x)
+        //    {
+        //        key = 1f;
+        //    }
+        //    if (CD > 2)
+        //    {
+        //        transform.localScale = new Vector2(7f * key, 7f);
+        //        animator.SetTrigger("throw");
+        //        animator.speed = 0.5f;
+        //        CD = 0;
+        //        GameObject spin = Instantiate(SwordPrefab);
+        //        spin.transform.position = gameObject.transform.position;
+        //    }
+        //transform.localScale = new Vector2(7f * key, 7f);
+        //rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
+
+
+        //}
+
+
+
+
+
+        //    float key = 0f;
+        //    if (Input.GetKeyDown(KeyCode.G))
+        //    {
+        //        animator.SetTrigger("attack3");
+        //        animator.speed = 0.87f;
+        //    }
+
+        //    if (Input.GetKeyDown(KeyCode.F))
+        //    {
+        //        animator.SetTrigger("throw");
+        //        animator.speed = 0.87f;
+        //        GameObject spin = Instantiate(SwordPrefab);
+        //        spin.transform.position = gameObject.transform.position;
+        //    }
+
+        //    if (Input.GetKey(KeyCode.LeftArrow))
+        //    {
+        //        key = -1f;
+        //    }
+        //    if (Input.GetKey(KeyCode.RightArrow))
+        //    { 
+        //        key = 1f;
+        //    }
+        //    if (rigidbody2D.velocity.y == 0 && Input.GetKeyDown(KeyCode.Space))
+        //    {
+        //        animator.SetTrigger("jump_sword");
+        //        animator.speed = 0.87f;
+        //        rigidbody2D.AddForce(transform.up * JumpForce);
+        //    }
+        //    float speedx = Mathf.Abs(rigidbody2D.velocity.x);
+        //    if (speedx < MaxSpeed)
+        //    {
+        //        rigidbody2D.AddForce(transform.right * key * WalkForce);
+        //    }
+        //    if (key != 0)
+        //    {
+        //        transform.localScale = new Vector2(7f * key, 7f);
+
+        //    }
+        //    if (rigidbody2D.velocity.y == 0)
+        //    {
+        //        animator.speed = speedx / 2.0f;
+        //    }
+    }
         void OnDrawGizmos()
     {
         
@@ -262,7 +259,16 @@ public class BossController : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position+ground, checkRadius);
         Gizmos.DrawLine(transform.position + new Vector3(raydis * 1, 0, 0), transform.position + new Vector3(raydis * 1, 0, 0) + Vector3.up * rayLength);
-        Gizmos.DrawLine(transform.position + new Vector3(BossCollider * 1, 0, 0) + Vector3.up * groundlength, transform.position + new Vector3(BossCollider * 1, 0, 0) + Vector3.down * groundlength);
+        Gizmos.DrawLine(transform.position + new Vector3(BossCollider * -1, 0, 0) + Vector3.up * groundlength, transform.position + new Vector3(BossCollider * -1, 0, 0) + Vector3.down * groundlength);
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
 
+        Debug.Log("發生碰撞");
+        if (collision != null && collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
+            Debug.Log("攻擊敵人");
+        }
+    }
 }
