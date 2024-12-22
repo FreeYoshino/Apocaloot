@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerHurt : MonoBehaviour
 {
     private Animator animator;              // 動畫
+    private GameObject audioController;     // 音效
     private void Start()
     {
         animator = GetComponent<Animator>();

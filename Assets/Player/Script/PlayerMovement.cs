@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
+    public CharacterAudioController audioController;
     public Animator animator;
     public GameObject myBag;
     public bool isOpen;
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40f;            
     float horizontalMove = 0f;
     bool jump = false;
+    bool wasMoving = false;     // 上一禎是否在移動
     private void OnEnable()                             //物件啟用時自動調用
     {
         //訂閱OnLandEvent事件,並且設定this.OnLanding為調用的函式
@@ -53,7 +55,22 @@ public class PlayerMovement : MonoBehaviour
             myBag.SetActive(isOpen);
         }
     }
-
+    private void PlayAudio()
+    {
+        bool isCurrentMoving = horizontalMove != 0;     // 現在是否要移動
+        if (isCurrentMoving && !wasMoving)
+        {
+            audioController.PlayWalkSound();
+        }
+        else if (!isCurrentMoving && wasMoving)
+        {
+            audioController.StopWalkSound();
+        }
+        if (jump)
+        {
+            audioController.PlayJumpSound();
+        }
+    }
     private void FixedUpdate()          //FixedUpadate()適用在物理計算
     {
         //移動角色
