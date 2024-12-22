@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Movement();
         OpenMyBag();
+        PlayAudio();
     }
     void Movement()
     {
@@ -57,14 +58,19 @@ public class PlayerMovement : MonoBehaviour
     }
     private void PlayAudio()
     {
-        bool isCurrentMoving = horizontalMove != 0;     // 現在是否要移動
-        if (isCurrentMoving && !wasMoving)
+        if (controller.IsGrounded())
         {
-            audioController.PlayWalkSound();
-        }
-        else if (!isCurrentMoving && wasMoving)
-        {
-            audioController.StopWalkSound();
+            // 在地面
+            bool isCurrentMoving = horizontalMove != 0;     // 現在是否要移動
+            if (isCurrentMoving && !wasMoving)
+            {
+                audioController.PlayWalkSound();
+            }
+            else if (!isCurrentMoving && wasMoving)
+            {
+                audioController.StopWalkSound();
+            }
+            wasMoving = isCurrentMoving;
         }
         if (jump)
         {
