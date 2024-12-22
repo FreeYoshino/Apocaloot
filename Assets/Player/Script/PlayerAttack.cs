@@ -11,11 +11,13 @@ public class PlayerAttack : MonoBehaviour
     public BulletGenerator bulletGenerator; // 子彈生成器
     private Animator animator;              // 動畫
     private Vector3 mousePosition;          // 滑鼠點擊的位置 
+    private CharacterAudioController audioController;     // 音效
     private void Start()
     {
         characterData = CharacterManager.GetCharacterData();
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController2D>();
+        audioController = GetComponent<CharacterAudioController>();
     }
     private void Update()
     {
@@ -23,6 +25,7 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !isAttacking)
         {
             Attack();
+            audioController.PlayAttackSound();
         }
         if (isAttacking)
         {

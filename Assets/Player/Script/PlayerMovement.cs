@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D controller;
+    public CharacterAudioController audioController;
     public Animator animator;
     public GameObject myBag;
     public bool isOpen;
@@ -12,11 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float runSpeed = 40f;            
     float horizontalMove = 0f;
     bool jump = false;
-
-    
-
-   
-
+    bool wasMoving = false;     // 上一禎是否在移動
     private void OnEnable()                             //物件啟用時自動調用
     {
         //訂閱OnLandEvent事件,並且設定this.OnLanding為調用的函式
@@ -32,33 +29,12 @@ public class PlayerMovement : MonoBehaviour
     {
         Movement();
         OpenMyBag();
-
-        // 測試切換場景
-        if (Input.GetKeyDown(KeyCode.C)) 
-        {
-            GameManager.LoadFirstScene();
-        } 
-        // 測試輸出角色資料
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            CharacterManager.PrintCharacterData();
-        }
-        // 測試角色Data變動
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-
-        }
-
-        
-
+        PlayAudio();
     }
     void Movement()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;     //獲取水平的輸入並*speed,注:GetAxisRaw("Horizontal")回傳-1 or 0 or 1
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));//給animator中的Speed值,以切換動畫
-        
-        
-        
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));          //給animator中的Speed值,以切換動畫
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;        //切換跳躍狀態變數
@@ -80,7 +56,27 @@ public class PlayerMovement : MonoBehaviour
             myBag.SetActive(isOpen);
         }
     }
-
+    private void PlayAudio()
+    {
+        if (controller.IsGrounded())
+        {
+            // 在地面
+            bool isCurrentMoving = horizontalMove != 0;     // 現在是否要移動
+            if (isCurrentMoving && !wasMoving)
+            {
+                audioController.PlayWalkSound();
+            }
+            else if (!isCurrentMoving && wasMoving)
+            {
+                audioController.StopWalkSound();
+            }
+            wasMoving = isCurrentMoving;
+        }
+        if (jump)
+        {
+            audioController.PlayJumpSound();
+        }
+    }
     private void FixedUpdate()          //FixedUpadate()適用在物理計算
     {
         //移動角色

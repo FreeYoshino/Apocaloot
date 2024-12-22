@@ -15,7 +15,9 @@ MonoBehaviour:
   itemName: Key
   itemImage: {fileID: 21300000, guid: ceb9b906724968e488dbea55e0e812cd, type: 3}
   itemHeld: 0
-  itemInfo: Key item to progress to the next level.
+  itemInfo: 'Can Open treasure
+
+'
   use: 0
   itemHealing: 0
   itemHp: 200

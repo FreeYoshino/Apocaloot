@@ -75,6 +75,7 @@ public class CharacterManager : MonoBehaviour
         instance.myHealthBar.SetHealth(myCharacterData.characterHp);
         if (instance.myCharacterData.characterHp <= 0)
         {
+            CharacterManager.GetCharacterObject().GetComponent<CharacterAudioController>().PlayDeadSound();
             GameManager.instance.GameOver(false);
         }
     }
