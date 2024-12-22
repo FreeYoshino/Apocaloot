@@ -24,8 +24,25 @@ public class HPcontroller : MonoBehaviour
     }
     public void DecreaseHP()
     {
-        animator.SetTrigger("BossMove2Idle");
-        animator.SetTrigger("BossHurt");
-        HP.GetComponent<Image>().fillAmount -=0.2f;
+        animator.Play("BossHurt");     // 如果需要可以保留
+        HP.GetComponent<Image>().fillAmount -= 0.2f;
+
+        if (HP.GetComponent<Image>().fillAmount <= 0f)
+        {
+            animator.SetTrigger("BossMove2Idle");
+
+            // 使用 Play 方法直接切換到 "BOSSDIE" 動畫狀態
+            animator.Play("BOSSDIE");
+
+            // 延遲 1 秒後銷毀
+            StartCoroutine(DestroyBossAfterDelay(1f));
+        }
     }
+
+    private IEnumerator DestroyBossAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(gameObject);
+    }
+
 }
