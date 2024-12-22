@@ -85,5 +85,14 @@ public class TotemController : MonoBehaviour
     {
         GameObject bullet = Instantiate(bulletPrefab, pos, Quaternion.identity);
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
 
+        Debug.Log("µo¥Í¸I¼²");
+        if (collision != null && collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
+            Debug.Log("§ðÀ»¼Ä¤H");
+        }
+    }
 }

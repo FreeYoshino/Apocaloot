@@ -73,7 +73,7 @@ public class CrabController : MonoBehaviour
             time = 0;
 
         }
-        Debug.Log("time"+time);
+        //Debug.Log("time"+time);
         
     }
     void StartAttack()
@@ -88,5 +88,15 @@ public class CrabController : MonoBehaviour
         // 回復到預設大小
         attackCollider.size = new Vector2(0.4f, 0.1f);
         attackCollider.offset = new Vector2(0.0f, 0f);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+        Debug.Log("發生碰撞");
+        if (collision != null && collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
+            Debug.Log("攻擊敵人");
+        }
     }
 }

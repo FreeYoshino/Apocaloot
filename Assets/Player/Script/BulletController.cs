@@ -25,11 +25,21 @@ public class BulletController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (!collision.CompareTag("Player"))
         {
             Debug.Log("µo¥Í¸I¼²");
             if (collision != null && collision.CompareTag("Enemy"))
             {
+             
+                collision.gameObject.GetComponent<MonsterHPController>().TakeDamage();
+                Debug.Log("§ðÀ»¼Ä¤H");
+                ShowDamageText(collision.transform);
+            }
+            if (collision != null && collision.CompareTag("BOSS"))
+            {
+
+                collision.gameObject.GetComponent<HPcontroller>().DecreaseHP();
                 Debug.Log("§ðÀ»¼Ä¤H");
                 ShowDamageText(collision.transform);
             }

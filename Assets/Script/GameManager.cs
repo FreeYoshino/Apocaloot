@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "FirstScene" || scene.name == "SecondScene" || scene.name == "BossScene")
+        if (scene.name == "FirstScene" || scene.name == "SecondScene" || scene.name == "BOSS_Scene")
         {
             OnLoadScene.Invoke();
         }
