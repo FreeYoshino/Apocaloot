@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     float horizontalMove = 0f;
     bool jump = false;
     bool wasMoving = false;     // 上一禎是否在移動
+    private bool isJumping;
     private void OnEnable()                             //物件啟用時自動調用
     {
         //訂閱OnLandEvent事件,並且設定this.OnLanding為調用的函式
@@ -43,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnLanding()
     {
-        // animator.SetBool("isJumping", false);
+        isJumping = false;
     }
 
     void OpenMyBag()
@@ -58,23 +60,22 @@ public class PlayerMovement : MonoBehaviour
     }
     private void PlayAudio()
     {
-        if (controller.IsGrounded())
+        bool isCurrentMoving = horizontalMove != 0;     // 現在是否要移動
+        if (jump && !isJumping)
         {
-            // 在地面
-            bool isCurrentMoving = horizontalMove != 0;     // 現在是否要移動
-            if (isCurrentMoving && !wasMoving)
+            isJumping = true;
+            audioController.PlayJumpSound();
+        }
+        if (!isJumping)
+        {
+            if (isCurrentMoving)
             {
                 audioController.PlayWalkSound();
             }
-            else if (!isCurrentMoving && wasMoving)
+            else if (!isCurrentMoving)
             {
                 audioController.StopWalkSound();
             }
-            wasMoving = isCurrentMoving;
-        }
-        if (jump)
-        {
-            audioController.PlayJumpSound();
         }
     }
     private void FixedUpdate()          //FixedUpadate()適用在物理計算
