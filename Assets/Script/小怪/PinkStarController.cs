@@ -70,6 +70,7 @@ public class PinkStarController : MonoBehaviour
             if (collision != null && collision.gameObject.CompareTag("Player"))
             {
                 collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
+                animator.Play("PinkStarHurt");
                 Debug.Log("§ðÀ»¼Ä¤H"); 
             }
     }
