@@ -58,7 +58,6 @@ public class PlayerAttack : MonoBehaviour
     private void HammerAttack()
     {
         // 槌子攻擊
-        Debug.Log("槌子攻擊");
         GameObject attackArea = gameObject.transform.Find("AttackArea").gameObject;
         isAttacking = true;
         attackArea.SetActive(isAttacking);
@@ -66,7 +65,6 @@ public class PlayerAttack : MonoBehaviour
     private void FireProjectile()
     {
         // 發射子彈類攻擊
-        Debug.Log("開火");
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);    // 將點擊的位置轉為世界座標
         mousePosition.z = 0f;
         Vector3 shootDirection = (mousePosition - gameObject.transform.position).normalized;    // 計算射擊方向
