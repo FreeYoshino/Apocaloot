@@ -29,20 +29,13 @@ public class HPcontroller : MonoBehaviour
 
         if (HP.GetComponent<Image>().fillAmount <= 0f)
         {
-            animator.SetTrigger("BossMove2Idle");
-
             // 使用 Play 方法直接切換到 "BOSSDIE" 動畫狀態
-            animator.Play("BOSSDIE");
+            animator.Play("BossDie");
+            Destroy(gameObject);
 
-            // 延遲 1 秒後銷毀
-            StartCoroutine(DestroyBossAfterDelay(1f));
         }
+        
     }
 
-    private IEnumerator DestroyBossAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        Destroy(gameObject);
-    }
 
 }

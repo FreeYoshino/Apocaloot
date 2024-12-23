@@ -155,22 +155,22 @@ public class BossController : MonoBehaviour
         }
         float PlayerDistance = Vector2.Distance(transform.position, PlayerTransform.transform.position);
         Vector2 PlayerPosition = PlayerTransform.transform.position;
-        if (PlayerDistance < 3f)
+        if (PlayerDistance < 1f)
         {
             animator.SetTrigger("BossMove2Idle");
 
-            //if (transform.position.x > PlayerPosition.x)
-            //{
-            //    key = -1f;
-            //}
-            //else if (transform.position.x < PlayerPosition.x)
-            //{
-            //    key = 1f;
-            //}
-            //transform.localScale = new Vector2(9f * key, 9f);
-            //rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
+            if (transform.position.x > PlayerPosition.x)
+            {
+                key = -1f;
+            }
+            else if (transform.position.x < PlayerPosition.x)
+            {
+                key = 1f;
+            }
+            transform.localScale = new Vector2(9f * key, 9f);
+            rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
 
-            animator.SetTrigger("attack3");
+            animator.Play("BossKnifeAttack");
             animator.speed = 0.5f;
 
         }
