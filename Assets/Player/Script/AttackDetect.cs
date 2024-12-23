@@ -8,14 +8,15 @@ public class AttackDetect : MonoBehaviour
     // ºl¤l§ðÀ»ªº§PÂ_
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.CompareTag("Player"))
+        if (collision != null && collision.CompareTag("Enemy"))
         {
-            Debug.Log("µo¥Í¸I¼²");
-            if (collision != null && collision.CompareTag("Enemy"))
-            {
-                Debug.Log("§ðÀ»¼Ä¤H");
-                ShowDamageText(collision.transform);
-            }
+            collision.gameObject.GetComponent<MonsterHPController>().TakeDamage();
+            ShowDamageText(collision.transform);
+        }
+        if (collision != null && collision.CompareTag("BOSS"))
+        {
+            collision.gameObject.GetComponent<HPcontroller>().DecreaseHP();
+            ShowDamageText(collision.transform);
         }
     }
     private void ShowDamageText(Transform transform)

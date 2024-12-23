@@ -18,7 +18,7 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private Transform m_CeilingCheck;  //宣告一個天花板檢查點的變數
 
     const float k_GroundedRadius = .2f; //用來檢測角色是否在地面的圓形碰撞半徑
-    private bool m_Grounded;            //判斷角色是否在地面上的布林值
+    public bool m_Grounded;            //判斷角色是否在地面上的布林值
     const float k_CeilingRadius = .2f;  //用來檢測角色頭頂是否有障礙物的圓形碰撞半徑
     private Rigidbody2D m_Rigidbody2D;  //角色的 Rigidbody2D，控制角色的物理行為
     public bool m_FacingRight = true;  //紀錄角色當前面朝的方向，true 表示向右

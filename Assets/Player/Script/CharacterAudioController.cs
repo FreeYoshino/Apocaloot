@@ -10,6 +10,7 @@ public class CharacterAudioController : MonoBehaviour
     public AudioClip deadSound;
     public AudioClip attackSound;
     private AudioSource audioSource;
+    private bool isWalkSoundPlaying;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,16 +18,25 @@ public class CharacterAudioController : MonoBehaviour
     }
     public void PlayWalkSound()
     {
-        audioSource.clip = walkSound;
-        audioSource.loop = true;
-        audioSource.Play();
+        if(!isWalkSoundPlaying)
+        {
+            audioSource.clip = walkSound;
+            audioSource.loop = true;
+            audioSource.Play();
+            isWalkSoundPlaying = true;
+        }
     }
     public void StopWalkSound()
     {
-        audioSource.Stop();
+        if (isWalkSoundPlaying)
+        {
+            audioSource.Stop();
+            isWalkSoundPlaying=false;
+        }
     }
     public void PlayJumpSound()
     {
+        StopWalkSound();
         audioSource.PlayOneShot(jumpSound);
     }
     public void PlayHurtSound()

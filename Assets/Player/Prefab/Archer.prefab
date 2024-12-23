@@ -139,6 +139,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   m_GroundCheck: {fileID: 2261088699588452084}
   m_CeilingCheck: {fileID: 6919774251608491404}
+  m_Grounded: 0
   m_FacingRight: 1
   OnLandEvent:
     m_PersistentCalls:
@@ -336,7 +337,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
