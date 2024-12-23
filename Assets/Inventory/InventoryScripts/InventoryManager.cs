@@ -41,6 +41,7 @@ public class InventoryManager : MonoBehaviour
         itemInformation = GameObject.Find("Canvas/Bag/ItemDescription").GetComponent<TMP_Text>();
         MessagePanel = GameObject.Find("Canvas/MessagePanel");
         bag.SetActive(false);
+        MessagePanel.SetActive(false);
         RefreshItem();
     }
 

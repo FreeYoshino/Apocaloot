@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class ButtonController : MonoBehaviour
 {
+    public void UseItemInBag()
+    {
+        InventoryManager.instance.OnUseButtonClicked();
+    }
     public void OnOkButtonClicked()
     {
         GameManager.LoadFirstScene();
