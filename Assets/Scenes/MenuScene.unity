@@ -1232,14 +1232,14 @@ RectTransform:
   m_GameObject: {fileID: 1453465566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 795471348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 3, y: 200}
   m_SizeDelta: {x: 700, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1453465568
@@ -1262,7 +1262,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u672B\u65E5\u5373\u5C07\u4F86\u81E8\uFF0C\u9B54\u738B\u70BA\u4E86\u4E00\u5DF1\u4E4B\u79C1\u60F3\u7834\u58DE\u4E16\u754C\u548C\u5E73\uFF0C\n\u4F5C\u70BA\u9019\u4E16\u754C\u4E00\u4EFD\u5B50\u7684\u4F60\n\u70BA\u4E86\u7DAD\u8B77\u73CD\u60DC\u7684\u4E00\u5207\u800C\u8E0F\u4E0A\u5192\u96AA\u65C5\u9014\uFF0C\n\u5728\u65C5\u9014\u4E2D\u4F60\u6703\u9047\u5230\u8A31\u591A\u5BF6\u7269\uFF0C\n\u9019\u4E9B\u6216\u8A31\u6703\u6210\u70BA\u4F60\u6253\u5012\u9B54\u738B\u7684\u8CC7\u7CE7\uFF0C\n\u76F4\u5230\u9032\u5230\u6700\u7D42\u4E4B\u5730\uFF0C\n\u4F60\u6703\u5728\u9019\u9047\u5230\u6B64\u6B21\u65C5\u9014\u7684\u76EE\u6A19\uFF0C\n\u6253\u5012\u4ED6\u4F60\u5C07\u6210\u70BA\u4E16\u754C\u7684\u6551\u4E16\u4E3B\u3002"
+  m_text: "\u672B\u65E5\u5373\u5C07\u4F86\u81E8\uFF0C\u9B54\u738B\u70BA\u4E86\u4E00\u5DF1\u4E4B\u79C1\u60F3\u7834\u58DE\u4E16\u754C\u548C\u5E73\n\u4F5C\u70BA\u9019\u4E16\u754C\u4E00\u4EFD\u5B50\u7684\u4F60\n\u70BA\u4E86\u7DAD\u8B77\u73CD\u60DC\u7684\u4E00\u5207\u800C\u8E0F\u4E0A\u5192\u96AA\u65C5\u9014\uFF0C\n\u5728\u65C5\u9014\u4E2D\u4F60\u6703\u9047\u5230\u8A31\u591A\u5BF6\u7269\uFF0C\n\u9019\u4E9B\u6216\u8A31\u6703\u6210\u70BA\u4F60\u6253\u5012\u9B54\u738B\u7684\u8CC7\u7CE7\uFF0C\n\u76F4\u5230\u9032\u5230\u6700\u7D42\u4E4B\u5730\uFF0C\n\u4F60\u6703\u5728\u9019\u9047\u5230\u6B64\u6B21\u65C5\u9014\u7684\u76EE\u6A19\uFF0C\n\u6253\u5012\u4ED6\u4F60\u5C07\u6210\u70BA\u4E16\u754C\u7684\u6551\u4E16\u4E3B\u3002"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ac58c660f9847af4ba9e2160e240d1d3, type: 2}
   m_sharedMaterial: {fileID: -1598650704842827, guid: ac58c660f9847af4ba9e2160e240d1d3, type: 2}
@@ -1289,8 +1289,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -3.5487633, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
