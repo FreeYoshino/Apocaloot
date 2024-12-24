@@ -43,13 +43,13 @@ public class GameManager : MonoBehaviour
                 case CharacterData.CharacterType.Shooter:
                     character.characterMaxHp = 80f;
                     character.characterHp = character.characterMaxHp;
-                    character.characterPower = 10f;
+                    character.characterPower = 20f;
                     character.characterTimeToAttack = 0.5f;
                     break;
                 case CharacterData.CharacterType.Hammer:
-                    character.characterMaxHp = 150f;
+                    character.characterMaxHp = 300f;
                     character.characterHp = character.characterMaxHp;
-                    character.characterPower = 10;
+                    character.characterPower = 10f;
                     character.characterTimeToAttack = 0.25f;
                     break;
             }

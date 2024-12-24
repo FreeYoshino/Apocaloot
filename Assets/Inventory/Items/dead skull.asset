@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79c3871b10c0e54f9c4556cefa2cedc, type: 3}
   m_Name: dead skull
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Dead Skull
   itemImage: {fileID: 21300000, guid: 640e5db7ab9f69247b52400cbd8705e9, type: 3}
   itemHeld: 0
   itemInfo: '- 100 HP'

@@ -5,14 +5,13 @@ using UnityEngine;
 public class cactus : MonoBehaviour
 {
     private bool isclose = false;
-    public PlayerHurt playerhurt;
     public float damageInterval = 1.0f;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             isclose = true;
-            StartCoroutine(Damage());
+            StartCoroutine(Damage(collision));
         }
     }
 
@@ -21,15 +20,15 @@ public class cactus : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isclose = false;
-            StopCoroutine(Damage());
+            StopCoroutine(Damage(collision));
         }
     }
 
-    private IEnumerator Damage()
+    private IEnumerator Damage(Collider2D collision)
     {
         while (isclose)
         {
-            playerhurt.Hurt(5);
+            collision.gameObject.GetComponent<PlayerHurt>().Hurt(5f);
             yield return new WaitForSeconds(damageInterval);
         }
     }

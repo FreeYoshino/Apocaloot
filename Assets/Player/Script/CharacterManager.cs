@@ -86,14 +86,7 @@ public class CharacterManager : MonoBehaviour
     public void UseItem(Item item, Inventory inventory)
     {
         // 使用道具
-        if (item.itemHeld == 1)
-        {
-            inventory.itemList.Remove(item);
-        }
-        else
-        {
-            item.itemHeld -= 1;
-        }
+        InventoryManager.instance.consumeItem(item);
         IncreaseMaxHp(item.itemHp);
         IncreaseHp(item.itemHealing);
         IncreasePower(item.itemPower);
