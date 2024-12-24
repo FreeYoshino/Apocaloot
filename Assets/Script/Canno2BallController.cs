@@ -57,8 +57,10 @@ public class CannoBall2Controller : MonoBehaviour
         {
             collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
             Debug.Log("§ðÀ»¼Ä¤H");
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
     }
+    
 }
 

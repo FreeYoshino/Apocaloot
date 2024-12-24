@@ -105,7 +105,7 @@ public class BossController : MonoBehaviour
             //{
             //key = 1f;
             //}
-            if (transform.position.x > 19 || transform.position.x < -18)
+            if (transform.position.x > 19 || transform.position.x < -17)
             {
                 key *= -1;
             }
@@ -155,7 +155,7 @@ public class BossController : MonoBehaviour
         }
         float PlayerDistance = Vector2.Distance(transform.position, PlayerTransform.transform.position);
         Vector2 PlayerPosition = PlayerTransform.transform.position;
-        if (PlayerDistance < 1f)
+        if (PlayerDistance < 3f)
         {
             animator.SetTrigger("BossMove2Idle");
 

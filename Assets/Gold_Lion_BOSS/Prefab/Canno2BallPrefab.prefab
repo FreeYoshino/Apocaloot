@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7762854975445222458}
   - component: {fileID: 8411927600864048281}
   - component: {fileID: 6033245927855020568}
+  - component: {fileID: 2147680787181625301}
   m_Layer: 0
   m_Name: Canno2BallPrefab
   m_TagString: Untagged
@@ -125,3 +126,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5addc5c8e9a12944d9f4ef90c99b0555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &2147680787181625301
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4392291354822436176}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0060290336, y: -0.0061426996}
+  serializedVersion: 2
+  m_Radius: 0.067828275
