@@ -17,6 +17,6 @@ MonoBehaviour:
   itemHeld: 0
   itemInfo: '+20 Max HP '
   use: 1
-  itemHealing: 0
+  itemHealing: 20
   itemHp: 20
   itemPower: 0

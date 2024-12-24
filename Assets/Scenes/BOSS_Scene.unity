@@ -314,6 +314,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1626967434}
   controller: {fileID: 1626967436}
   treasure: {fileID: 65813964}
+  key: {fileID: 0}
 --- !u!1 &66737312
 GameObject:
   m_ObjectHideFlags: 0
@@ -4258,6 +4259,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1626967434}
   controller: {fileID: 1626967436}
   treasure: {fileID: 0}
+  key: {fileID: 0}
 --- !u!114 &1474683081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4420,6 +4422,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1626967434}
   controller: {fileID: 1626967436}
   treasure: {fileID: 0}
+  key: {fileID: 0}
 --- !u!114 &1595609882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5522,6 +5525,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1626967434}
   controller: {fileID: 1626967436}
   treasure: {fileID: 0}
+  key: {fileID: 0}
 --- !u!114 &1881636475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8620,6 +8624,7 @@ GameObject:
   - component: {fileID: 2071578916}
   - component: {fileID: 2071578918}
   - component: {fileID: 2071578917}
+  - component: {fileID: 2071578919}
   m_Layer: 5
   m_Name: Bag
   m_TagString: Untagged
@@ -8689,6 +8694,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071578915}
   m_CullTransparentMesh: 1
+--- !u!114 &2071578919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071578915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878b9a7d80349e24eb319bdc4509e74c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2080269707
 GameObject:
   m_ObjectHideFlags: 0

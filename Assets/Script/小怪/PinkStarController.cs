@@ -66,12 +66,12 @@ public class PinkStarController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-            Debug.Log("發生碰撞");
+            // Debug.Log("發生碰撞");
             if (collision != null && collision.gameObject.CompareTag("Player"))
             {
                 collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
                 animator.Play("PinkStarHurt");
-                Debug.Log("攻擊敵人"); 
+                // Debug.Log("攻擊敵人"); 
             }
     }
 }

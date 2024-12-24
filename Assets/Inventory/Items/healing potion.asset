@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79c3871b10c0e54f9c4556cefa2cedc, type: 3}
   m_Name: healing potion
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Healing Potion
   itemImage: {fileID: 21300000, guid: 5c99bb625d2f0314c9d5a2a59e043e3c, type: 3}
   itemHeld: 0
   itemInfo: + 20 HP

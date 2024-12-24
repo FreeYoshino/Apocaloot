@@ -20,5 +20,5 @@ MonoBehaviour:
 '
   use: 0
   itemHealing: 0
-  itemHp: 200
-  itemPower: 100
+  itemHp: 0
+  itemPower: 0
