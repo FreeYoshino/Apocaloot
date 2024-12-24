@@ -714,6 +714,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1851152992}
   controller: {fileID: 1851152994}
   treasure: {fileID: 238044618}
+  key: {fileID: 11400000, guid: e09539b4d17961742941b7652a381ae6, type: 2}
 --- !u!1 &364038737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,6 +1150,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1851152992}
   controller: {fileID: 1851152994}
   treasure: {fileID: 398242601}
+  key: {fileID: 11400000, guid: e09539b4d17961742941b7652a381ae6, type: 2}
 --- !u!1001 &441585222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1274,7 +1276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092fde5a96a7ec448b3b3cc692beca93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerhurt: {fileID: 1449254409654644319}
+  damageInterval: 1
 --- !u!1001 &469382120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2072,7 +2074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092fde5a96a7ec448b3b3cc692beca93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerhurt: {fileID: 1449254409654644319}
+  damageInterval: 1
 --- !u!1 &566835155
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,6 +2273,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1851152992}
   controller: {fileID: 1851152994}
   treasure: {fileID: 0}
+  key: {fileID: 0}
 --- !u!114 &685813107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2578,7 +2581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092fde5a96a7ec448b3b3cc692beca93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerhurt: {fileID: 1449254409654644319}
+  damageInterval: 1
 --- !u!1 &775057902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2918,7 +2921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092fde5a96a7ec448b3b3cc692beca93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerhurt: {fileID: 1449254409654644319}
+  damageInterval: 1
 --- !u!1 &896473934
 GameObject:
   m_ObjectHideFlags: 0
@@ -3699,6 +3702,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1851152992}
   controller: {fileID: 1851152994}
   treasure: {fileID: 1126342782}
+  key: {fileID: 11400000, guid: e09539b4d17961742941b7652a381ae6, type: 2}
 --- !u!1 &1163948558
 GameObject:
   m_ObjectHideFlags: 0
@@ -3889,6 +3893,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1851152992}
   controller: {fileID: 1851152994}
   treasure: {fileID: 0}
+  key: {fileID: 0}
 --- !u!114 &1176563892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19599,7 +19604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092fde5a96a7ec448b3b3cc692beca93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerhurt: {fileID: 1449254409654644319}
+  damageInterval: 1
 --- !u!1 &1202582625
 GameObject:
   m_ObjectHideFlags: 0
@@ -21243,6 +21248,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1851152992}
   controller: {fileID: 1851152994}
   treasure: {fileID: 1557201787}
+  key: {fileID: 11400000, guid: e09539b4d17961742941b7652a381ae6, type: 2}
 --- !u!1001 &1575176814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21368,7 +21374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092fde5a96a7ec448b3b3cc692beca93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerhurt: {fileID: 1449254409654644319}
+  damageInterval: 1
 --- !u!1 &1603071293
 GameObject:
   m_ObjectHideFlags: 0
@@ -22230,11 +22236,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3717121714420555413, guid: 0a1baa1b5eb7f91459452337325ed3a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 71.68
+      value: 23.1
       objectReference: {fileID: 0}
     - target: {fileID: 3717121714420555413, guid: 0a1baa1b5eb7f91459452337325ed3a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.18
+      value: 31.6
       objectReference: {fileID: 0}
     - target: {fileID: 3717121714420555413, guid: 0a1baa1b5eb7f91459452337325ed3a5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22675,6 +22681,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1851152992}
   controller: {fileID: 1851152994}
   treasure: {fileID: 0}
+  key: {fileID: 0}
 --- !u!114 &1943519673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23321,17 +23328,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2052806164331629888, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
   m_PrefabInstance: {fileID: 1449254409654644317}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1449254409654644319 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8344274019397306260, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
-  m_PrefabInstance: {fileID: 1449254409654644317}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4ea5f49bb668c041adcbf9db5c9a9dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5133923573302039650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23412,7 +23408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092fde5a96a7ec448b3b3cc692beca93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerhurt: {fileID: 1449254409654644319}
+  damageInterval: 1
 --- !u!61 &5133923573302039653
 BoxCollider2D:
   m_ObjectHideFlags: 0

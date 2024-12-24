@@ -28,8 +28,6 @@ public class InventoryManager : MonoBehaviour
     private void OnEnable()
     {
         InitializeInventory();
-        //RefreshItem();
-        // instance.itemInformation.text = "";
     }
 
     public void OnGameSceneLoaded()
@@ -76,6 +74,19 @@ public class InventoryManager : MonoBehaviour
                 message.text = "This item can't used.";
             }
         }
+    }
+    public void consumeItem(Item item)      
+    {
+        // 消耗道具(開啟寶箱等)
+        if (item.itemHeld == 1)
+        {
+            myBag.itemList.Remove(item);
+        }
+        else
+        {
+            item.itemHeld -= 1;
+        }
+        RefreshItem();
     }
     public void GetRandomItem()
     {

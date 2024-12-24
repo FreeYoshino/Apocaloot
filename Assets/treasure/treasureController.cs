@@ -9,13 +9,12 @@ public class treasureController : MonoBehaviour
     public checkAnswer controller;
     private bool isneartreasure = false;
     public GameObject treasure;
-
+    [SerializeField] private Item key;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
             isneartreasure = true;
-
         }
     }
 
@@ -31,11 +30,13 @@ public class treasureController : MonoBehaviour
     {
         if (isneartreasure == true && Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log("開啟寶箱");
-            Destroy(treasure);
-            treasureQA.SetActive(true);
-            controller.DisplayRandomQuestion();
-            
+            if (key.itemHeld >= 1)
+            {
+                InventoryManager.instance.consumeItem(key);
+                Destroy(treasure);
+                treasureQA.SetActive(true);
+                controller.DisplayRandomQuestion();
+            }
         }
     }
     public void onButtonClick()
