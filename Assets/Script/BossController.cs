@@ -14,7 +14,7 @@ public class BossController : MonoBehaviour
     float JumpForce = 11f;    //BOSS跳的力道
     float JumpX = 0.1f;
     float key = 1f;          //BOSS是否轉向
-    float run = 5f;         //move的速度
+    float run = 3f;         //move的速度
     float dis = 15f;        //Boss移動距離範圍
     float CD = 0f;          //總CD
     float ThrowSpeed = 3f; //丟刀動畫速度
