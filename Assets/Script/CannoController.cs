@@ -14,6 +14,8 @@ public class CanoController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         direction = transform.localScale.x;
+        
+
     }
 
     // Update is called once per frame
@@ -27,14 +29,18 @@ public class CanoController : MonoBehaviour
             Key = -1;
         }
         CD += Time.deltaTime;
-        if (CD > 2)
+        if (CD > 5)
         {
-            transform.localScale = new Vector2(5f*Key, 5f);
+            transform.localScale = new Vector2(5f * Key, 5f);
             animator.SetTrigger("CannoShoot");
             animator.speed = 2f;
             CD = 0;
-            GameObject spin = Instantiate(CannoBall); ;
-            spin.transform.position = gameObject.transform.position;
+
+            GameObject spin = Instantiate(CannoBall);
+            spin.transform.position = transform.position; // 確保子彈從當前物件的位置生成
+
+           
         }
+
     }
 }

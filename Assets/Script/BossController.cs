@@ -105,7 +105,7 @@ public class BossController : MonoBehaviour
             //{
             //key = 1f;
             //}
-            if (transform.position.x > 19 || transform.position.x < -17)
+            if (transform.position.x > 19 || transform.position.x < -15)
             {
                 key *= -1;
             }
