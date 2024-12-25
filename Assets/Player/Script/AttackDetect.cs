@@ -10,12 +10,12 @@ public class AttackDetect : MonoBehaviour
     {
         if (collision != null && collision.CompareTag("Enemy"))
         {
-            collision.gameObject.GetComponent<MonsterHPController>().TakeDamage();
+            collision.gameObject.GetComponent<MonsterHPController>().TakeDamage(CharacterManager.GetCharacterData().characterPower);
             ShowDamageText(collision.transform);
         }
         if (collision != null && collision.CompareTag("BOSS"))
         {
-            collision.gameObject.GetComponent<HPcontroller>().DecreaseHP();
+            collision.gameObject.GetComponent<HPcontroller>().DecreaseHP(CharacterManager.GetCharacterData().characterPower);
             ShowDamageText(collision.transform);
         }
     }
