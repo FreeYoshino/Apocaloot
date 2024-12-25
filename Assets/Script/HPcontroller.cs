@@ -8,6 +8,7 @@ public class HPcontroller : MonoBehaviour
 {
     GameObject HP;
     float time=0;
+    float bosshp = 250f;
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -22,10 +23,11 @@ public class HPcontroller : MonoBehaviour
 
 
     }
-    public void DecreaseHP()
+    public void DecreaseHP(float damage)
     {
+        float hurt = damage / bosshp;
         animator.Play("BossHurt");     // 如果需要可以保留
-        HP.GetComponent<Image>().fillAmount -= 0.2f;
+        HP.GetComponent<Image>().fillAmount -= hurt;
 
         if (HP.GetComponent<Image>().fillAmount <= 0f)
         {
