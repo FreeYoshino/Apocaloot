@@ -8,7 +8,7 @@ public class HealthBar : MonoBehaviour
     private void Start()
     {
         // 載入時設置血條
-        SetMaxHealth(CharacterManager.GetCharacterData().characterMaxHp, CharacterManager.GetCharacterData().characterMaxHp);
+        SetMaxHealth(CharacterManager.GetCharacterData().characterMaxHp, CharacterManager.GetCharacterData().characterHp);
     }
     public void SetMaxHealth(float maxHp, float hp)
     {
