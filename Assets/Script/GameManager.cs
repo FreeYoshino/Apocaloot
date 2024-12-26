@@ -91,6 +91,7 @@ public class GameManager : MonoBehaviour
         else
         {
             // 失敗
+            SceneManager.LoadScene("failure");
             Debug.Log("角色死亡,遊戲失敗");
         }
     }

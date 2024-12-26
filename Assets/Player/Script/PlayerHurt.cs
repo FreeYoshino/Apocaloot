@@ -13,6 +13,7 @@ public class PlayerHurt : MonoBehaviour
     }
     public void Hurt(float damage)
     {
+        if (CharacterManager.instance.isDead) { return; }
         CharacterManager.instance.DecreaseHp(damage);   // ¦©¦å
         animator.SetTrigger("Hurt");
         audioController.PlayHurtSound();

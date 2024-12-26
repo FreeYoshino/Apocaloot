@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Unity.Properties;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ public class CharacterManager : MonoBehaviour
     public static CharacterManager instance;
     public CharacterData myCharacterData;
     public HealthBar myHealthBar;
+    public bool isDead = false;
     private void Awake()
     {
         if (instance != null)
@@ -71,13 +73,34 @@ public class CharacterManager : MonoBehaviour
     }
     public void DecreaseHp(float value)
     {
-        instance.myCharacterData.characterHp -= value;
-        instance.myHealthBar.SetHealth(myCharacterData.characterHp);
-        if (instance.myCharacterData.characterHp <= 0)
+        if (!isDead)
         {
-            CharacterManager.GetCharacterObject().GetComponent<CharacterAudioController>().PlayDeadSound();
-            GameManager.instance.GameOver(false);
+            instance.myCharacterData.characterHp -= value;
+            instance.myHealthBar.SetHealth(myCharacterData.characterHp);
+            if (instance.myCharacterData.characterHp <= 0)
+            {
+                isDead = true;
+                // 播放死亡音效
+                CharacterManager.GetCharacterObject().GetComponent<CharacterAudioController>().PlayDeadSound();
+                // 開始協程等待死亡音效結束
+                Time.timeScale = 0;
+                StartCoroutine(WaitForDeathSound());
+            }
         }
+    }
+    private IEnumerator WaitForDeathSound()
+    {
+        // 取得音效播放長度
+       AudioClip audioClip = CharacterManager.GetCharacterObject().GetComponent<CharacterAudioController>().deadSound;
+
+        if (audioClip != null && audioClip != null)
+        {
+            // 等待音效結束
+            yield return new WaitForSecondsRealtime(audioClip.length);
+        }
+        Time.timeScale = 1;
+        // 切換場景或執行遊戲結束邏輯
+        GameManager.instance.GameOver(false);
     }
     public void IncreasePower(float value)
     {
