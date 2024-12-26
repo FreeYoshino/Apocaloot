@@ -30,9 +30,9 @@ public class CannoBall2Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("方向: " + direction);
+        //Debug.Log("方向: " + direction);
         rb.velocity = direction * bulletSpeed;
-        Debug.Log("速度: " + rb.velocity);
+        //Debug.Log("速度: " + rb.velocity);
         if (gameObject.transform.position.x > right_border.transform.position.x)
         {
             //animator.SetTrigger("CannoBall");
@@ -48,11 +48,11 @@ public class CannoBall2Controller : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        Debug.Log("發生碰撞");
+        //Debug.Log("發生碰撞");
         if (collision != null && collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
-            Debug.Log("攻擊敵人");
+            //Debug.Log("攻擊敵人");
             
         }
         Destroy(gameObject);
