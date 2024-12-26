@@ -87,10 +87,12 @@ public class GameManager : MonoBehaviour
         if (result)
         {
             // 勝利
+            SceneManager.LoadScene("victor");
         }
         else
         {
             // 失敗
+            SceneManager.LoadScene("failure");
             Debug.Log("角色死亡,遊戲失敗");
         }
     }
@@ -105,5 +107,9 @@ public class GameManager : MonoBehaviour
     public static void LoadBossScene()
     {
         SceneManager.LoadScene("Boss_Scene");
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("BootScene");
     }
 }

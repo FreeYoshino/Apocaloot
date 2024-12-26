@@ -34,7 +34,7 @@ public class HPcontroller : MonoBehaviour
             // 使用 Play 方法直接切換到 "BOSSDIE" 動畫狀態
             animator.Play("BossDie");
             Destroy(gameObject);
-
+            GameManager.instance.GameOver(true);
         }
         
     }

@@ -23,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WeiTestScene.unity
     guid: 324930de10239d844acaa1102c2c8e53
+  - enabled: 1
+    path: Assets/Scenes/failure.unity
+    guid: a917bae82cae83345bec4404f9f29fc2
+  - enabled: 1
+    path: Assets/Scenes/victor.unity
+    guid: 97c989dc2ac16234ba6511c6e778af3b
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
