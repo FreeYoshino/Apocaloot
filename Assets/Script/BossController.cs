@@ -10,7 +10,7 @@ public class BossController : MonoBehaviour
 {
     public GameObject SwordPrefab;
     //public GameObject PlayerBullet;
- 
+    float knifeCD = 1.5f;           //BOSS揮刀CD
     float JumpForce = 11f;    //BOSS跳的力道
     float JumpX = 0.1f;
     float key = 1f;          //BOSS是否轉向

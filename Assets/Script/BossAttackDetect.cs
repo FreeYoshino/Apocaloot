@@ -8,7 +8,7 @@ public class BossAttackDetect : MonoBehaviour
     {
         if (collision != null && collision.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
+            collision.gameObject.GetComponent<PlayerHurt>().Hurt(10f);
         }
     }
 }
