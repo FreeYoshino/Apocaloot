@@ -71,6 +71,7 @@ public class BossController : MonoBehaviour
         RaycastHit2D turn = Physics2D.Raycast(transform.position + new Vector3(BossCollider * direction,0,0), Vector3.down, groundlength);
 
         isGrounded = Physics2D.OverlapCircle(transform.position + ground, checkRadius, bridgeLayer);
+        Collider2D hitCollider = Physics2D.OverlapCircle(transform.position + ground, checkRadius, bridgeLayer);
         if (isGrounded)
         {
             //Debug.Log("isgrounded");
@@ -86,7 +87,7 @@ public class BossController : MonoBehaviour
             //是否要跳
             if (JumpCD == 0f)
             {
-                if (hit.collider != null)
+                if (hit.collider != null && !hit.collider.CompareTag("Player"))
                 {
                     CD = 0;
                     JumpCD = 1f;
@@ -143,14 +144,16 @@ public class BossController : MonoBehaviour
             }
             if (CD > ThrowCD)
             {
-                transform.localScale = new Vector2(9f * key, 9f);
-                animator.SetTrigger("BossThrowAttack");
-                animator.speed = ThrowSpeed;
-                GameObject spin = Instantiate(SwordPrefab);
-                spin.transform.position = gameObject.transform.position;
-                animator.speed = 1f;
-                ThrowCD = float.PositiveInfinity;
-
+                if (hitCollider != null && hitCollider.CompareTag("Player"))
+                {
+                    transform.localScale = new Vector2(9f * key, 9f);
+                    animator.SetTrigger("BossThrowAttack");
+                    animator.speed = ThrowSpeed;
+                    GameObject spin = Instantiate(SwordPrefab);
+                    spin.transform.position = gameObject.transform.position;
+                    animator.speed = 1f;
+                    ThrowCD = float.PositiveInfinity;
+                }
             }
         }
         float PlayerDistance = Vector2.Distance(transform.position, PlayerTransform.transform.position);
