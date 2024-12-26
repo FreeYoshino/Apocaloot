@@ -12,7 +12,10 @@ public class ButtonController : MonoBehaviour
     {
         GameManager.LoadFirstScene();
     }
-
+    public void OnRestartButtonClicked()
+    {
+        GameManager.instance.RestartGame();
+    }
     public void LoadFirstScene()
     {
         GameManager.LoadFirstScene();

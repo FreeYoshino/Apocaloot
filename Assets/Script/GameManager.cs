@@ -108,4 +108,8 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Boss_Scene");
     }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("BootScene");
+    }
 }
