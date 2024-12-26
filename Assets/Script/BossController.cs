@@ -147,7 +147,7 @@ public class BossController : MonoBehaviour
             }
             if (CD > ThrowCD)
             {
-                if (hitCollider != null && hitCollider.CompareTag("Player"))
+                if (hitCollider != null && !hitCollider.CompareTag("Player"))
                 {
                     transform.localScale = new Vector2(9f * key, 9f);
                     animator.SetTrigger("BossThrowAttack");
