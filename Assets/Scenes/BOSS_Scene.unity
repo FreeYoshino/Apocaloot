@@ -314,7 +314,7 @@ MonoBehaviour:
   treasureQA: {fileID: 1626967434}
   controller: {fileID: 1626967436}
   treasure: {fileID: 65813964}
-  key: {fileID: 0}
+  key: {fileID: 11400000, guid: e09539b4d17961742941b7652a381ae6, type: 2}
 --- !u!1 &66737312
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,11 +793,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 0
+  far clip plane: 250
   field of view: 60
   orthographic: 1
-  orthographic size: 14.591075
+  orthographic size: 9
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -842,10 +842,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smooothTime: 0.3
   offest: {x: 0, y: 3, z: 0}
-  minX: 1.5
-  maxX: 1.9
-  minY: 4
-  maxY: 5
+  minX: -7.9
+  maxX: 11.5
+  minY: -0.72
+  maxY: 13.04
 --- !u!82 &245562333
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1762,6 +1762,7 @@ GameObject:
   m_Component:
   - component: {fileID: 528223526}
   - component: {fileID: 528223527}
+  - component: {fileID: 528223528}
   m_Layer: 0
   m_Name: "\u6D77\u76DC\u82392"
   m_TagString: Untagged
@@ -1839,6 +1840,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &528223528
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528223525}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.26}
+    newSize: {x: 0.8, y: 0.26}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.26}
+  m_EdgeRadius: 0
 --- !u!1 &540395410
 GameObject:
   m_ObjectHideFlags: 0
@@ -4152,11 +4198,11 @@ PrefabInstance:
       objectReference: {fileID: 2071578915}
     - target: {fileID: 2052806164331629888, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.19
+      value: -18.68
       objectReference: {fileID: 0}
     - target: {fileID: 2052806164331629888, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.53
+      value: 11.5
       objectReference: {fileID: 0}
     - target: {fileID: 2052806164331629888, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4188,6 +4234,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2052806164331629888, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2110206519807780719, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
+      propertyPath: m_BodyType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4177990900025799131, guid: 721ad06d39b8cc548a9cfafe68283727, type: 3}
