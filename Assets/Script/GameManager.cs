@@ -87,6 +87,7 @@ public class GameManager : MonoBehaviour
         if (result)
         {
             // ³Ó§Q
+            SceneManager.LoadScene("victor");
         }
         else
         {
