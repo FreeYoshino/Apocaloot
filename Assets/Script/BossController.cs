@@ -44,6 +44,9 @@ public class BossController : MonoBehaviour
     Animator animator;
 
     Rigidbody2D rigidbody2D;
+    public GameObject AttackArea;
+    private float attackCD = 2f;
+    public bool canAttack = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -158,7 +161,7 @@ public class BossController : MonoBehaviour
         }
         float PlayerDistance = Vector2.Distance(transform.position, PlayerTransform.transform.position);
         Vector2 PlayerPosition = PlayerTransform.transform.position;
-        if (PlayerDistance < 3f)
+        if (PlayerDistance < 3f && canAttack)
         {
             animator.SetTrigger("BossMove2Idle");
 
@@ -172,7 +175,10 @@ public class BossController : MonoBehaviour
             }
             transform.localScale = new Vector2(9f * key, 9f);
             rigidbody2D.velocity = new Vector2(run * key, rigidbody2D.velocity.y);
-
+            AttackArea.SetActive(true);
+            canAttack = false;
+            StartCoroutine(attackCoolDown(attackCD));
+            StartCoroutine(DisableAfterSeconds(0.1f));
             animator.Play("BossKnifeAttack");
             animator.speed = 0.5f;
 
@@ -264,14 +270,27 @@ public class BossController : MonoBehaviour
         Gizmos.DrawLine(transform.position + new Vector3(raydis * 1, 0, 0), transform.position + new Vector3(raydis * 1, 0, 0) + Vector3.up * rayLength);
         Gizmos.DrawLine(transform.position + new Vector3(BossCollider * -1, 0, 0) + Vector3.up * groundlength, transform.position + new Vector3(BossCollider * -1, 0, 0) + Vector3.down * groundlength);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private IEnumerator DisableAfterSeconds(float seconds)
     {
-
-        Debug.Log("發生碰撞");
-        if (collision != null && collision.gameObject.CompareTag("Player"))
+        yield return new WaitForSeconds(seconds); // 等待指定时间
+        if (AttackArea != null)
         {
-            collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
-            Debug.Log("攻擊敵人");
+            AttackArea.SetActive(false); // 禁用攻击范围
         }
     }
+    private IEnumerator attackCoolDown(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        canAttack = true;
+    }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+
+    //    // Debug.Log("發生碰撞");
+    //    if (collision != null && collision.gameObject.CompareTag("Player"))
+    //    {
+    //        collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
+    //        Debug.Log("攻擊敵人");
+    //    }
+    //}
 }

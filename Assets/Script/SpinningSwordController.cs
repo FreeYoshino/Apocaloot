@@ -41,16 +41,26 @@ public class SpinningSwordController : MonoBehaviour
         }
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        Debug.Log("發生碰撞");
+        // Debug.Log("發生碰撞");
         if (collision != null && collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
             Debug.Log("攻擊敵人");
             Destroy(gameObject);
         }
-        
     }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+
+    //    Debug.Log("發生碰撞");
+    //    if (collision != null && collision.gameObject.CompareTag("Player"))
+    //    {
+    //        collision.gameObject.GetComponent<PlayerHurt>().Hurt(20f);
+    //        Debug.Log("攻擊敵人");
+    //        Destroy(gameObject);
+    //    }
+
+    //}
 }
